@@ -8,18 +8,140 @@
 
 html {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 body {
   width: 100%;
   height: auto;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", Arial, "Arial Black", Courier New, Helvetica,
+    sans-serif;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+article {
+  display: flex;
+  align-items: flex-end;
+  background-color: white;
+}
+
+article,
+details,
+hgroup,
+menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  display: block;
+  flex-direction: column;
+}
+
+b {
+  font-weight: bold;
+}
+
+blockquote,
+q {
+  margin: 0;
+  padding: 0;
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  margin: 0;
+  padding: 0;
+  content: "";
+  content: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background-color: lavender;
+}
+
+div,
+section,
+header {
+  text-decoration: none;
+}
+
+form,
+input {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-decoration: none;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: white;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  grid-gap: 15px;
+  gap: 15px;
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p::first-letter {
+  font-style: unset;
 }
 
 section {
   width: 100%;
   height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  grid-gap: 15px;
+  gap: 15px;
+  list-style-type: none;
 }
 
 /* Main */
@@ -27,6 +149,8 @@ section {
 main {
   width: 100%;
   height: auto;
+  background-color: lightgray;
+  overflow: visible;
 }
 
 
@@ -52,28 +176,85 @@ main {
   flex-flow: row wrap;
 }
 
+/* Heading */
+
+.logo--big {
+  width: 35%;
+  border-radius: 0;
+}
+
+/* Main block (.cont) */
+/* Margins main */
+
+.cont {
+  width: 100%;
+  height: auto;
+  padding: 0 5% 80px 5%;
+}
+
+/* Title */
+
+.cont__title {
+  padding: 30px 0 15px 0;
+}
+
+/* Cards */
+
+/* Layout between block and cards */
+
+.cont__big__block {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.cont__cards__sticker {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.cont__cards__free {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+
 /* Pictures in the cards */
 
 figure {
-  width: 100%;
-  height: 200px;
+  width: auto;
+  height: 28vh;
   object-fit: cover;
+  border-radius: 17px;
+  background-color: #fff;
 }
 
 img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 17px 17px 0px 0px;
 }
 
 .card__sticker__img {
   width: 100%;
-  height: calc(100% - 40px);
+  height: calc(100% - 80px);
+  /* display: flex; */
+  /* align-content: center; */
+  /* justify-content: center; */
 }
 
 .card__free__img {
   width: 100%;
-  height: calc(100% - 40px);
+  height: calc(100% - 80px);
+  /* display: flex; */
+  /* align-content: center; */
+  /* justify-content: center; */
 }
+
+
 
 /* Option if you want to display or not the "Nouveau" sticker in the future */
 
@@ -93,14 +274,22 @@ img {
   display: none;
 }
 
-/* Position of the text in the figcaptions */
+/* Border-radius of the cards (figcaptions) */
+
+.layout {
+  background-color: #fff;
+}
+
+/* Position of the text in the cards (figcaptions) */
 
 .text__position {
-  width: 80%;
+  width: 75%;
+  display: block;
 }
 
 .icone__position {
-  width: 20%;
+  width: 15%;
+  display: block;
 }
 
 /* Footer */
@@ -109,4 +298,23 @@ footer {
   width: 100%;
   height: auto;
   background-color: darkgray;
+  overflow: hidden;
+}
+
+.logo--little {
+  width: 25%;
+  border-radius: 0;
+}
+
+.icone--length {
+  width: 5%;
+}
+
+.text--length {
+  width: 95%;
+  padding-left: 50px;
+}
+
+.footer__text--color {
+  color: #fff;
 }
