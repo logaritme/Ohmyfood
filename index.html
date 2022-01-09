@@ -3,12 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Ohmyfood</title>
+    <meta name="description" content="Page description. No longer than 155 characters.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,900i" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/???.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Ohmyfood</title>
+
+    <script src="https://kit.fontawesome.com/467f0c1e9b.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="flex-c-nw">
@@ -29,13 +35,13 @@
                     <label for="location">
                         <span class="fas fa-map-marker-alt location__icon"></span>
                     </label>
-                        <input type="search" name="location" id="location" value="Paris, Belleville" minlength="4" maxlength="36" placeholder="Taper un nom de quartier">
+                    <input type="search" name="location" id="location" value="Paris, Belleville" minlength="4" maxlength="36" placeholder="Taper un nom de quartier">
                 </form>
             </div>
-            <div>
-                <p>Réservez</p>
-                <p>Découvrez</p>
-                <button>
+            <div class="book" >
+                <p>Réservez le menu qui vous convient</p>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <button class="button__first">
                     <p>Explorer nos restaurants</p>
                 </button>
             </div>
@@ -43,8 +49,11 @@
 
         </section>
         <section class="heading__second">
-            <div>
-                <p>Fonctionnement</p>
+            <p class="heading__second__title">Fonctionnement</p>
+            <div class="heading__second__functioning">
+                <div>Choisissez un restaurant</div>
+                <div>Composer votre menu</div>
+                <div>Dégustez au restaurant</div>
             </div>
 
         </section>
@@ -67,7 +76,7 @@
                                     <p  class="text__position__bold">La palette du goût</p>
                                     <p  class="text__position__thin">Ménilmontant</p>
                                 </div>
-                                <div class="icone__position"><span class="fas fa-heart">Icone coeur à remplir</span></div>
+                                <div class="icone__position"><span class="fas fa-heart"></span></div>
                             </figcaption>
                         </figure>
                     </section>
@@ -82,7 +91,7 @@
                                     <p  class="text__position__bold">La note enchantée</p>
                                     <p  class="text__position__thin">Charonne</p>
                                 </div>
-                                <div class="icone__position"><span class="fas fa-heart">Icone coeur à remplir</span></div>
+                                <div class="icone__position"><span class="fas fa-heart"></span></div>
                             </figcaption>
                         </figure>
                     </section>
@@ -99,7 +108,7 @@
                                     <p  class="text__position__bold">À la française</p>
                                     <p  class="text__position__thin">Cité Rouge</p>
                                 </div>
-                                <div class="icone__position"><span class="fas fa-heart">Icone coeur à remplir</span></div>
+                                <div class="icone__position"><span class="fas fa-heart"></span></div>
                             </figcaption>
                         </figure>
                     </section>
@@ -114,7 +123,7 @@
                                     <p  class="text__position__bold">Le délice des sens</p>
                                     <p  class="text__position__thin">Folie-Méricourt</p>
                                 </div>
-                                <div class="icone__position"><span class="fas fa-heart">Icone coeur à remplir</span></div>
+                                <div class="icone__position"><span class="fas fa-heart"></span></div>
                             </figcaption>
                         </figure> 
                     </section>
