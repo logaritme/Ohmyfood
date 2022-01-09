@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,900i" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Ohmyfood</title>
 </head>
@@ -17,19 +18,18 @@
         </div>
         <header class="header">
             <picture class="header__logo">
-                <img src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">">
+                <img src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
             </picture>
         </header>
     </section>
-    <div class="heading-all">
-        <section class="heading-first">
+    <div class="heading__all">
+        <section class="heading__first">
             <div>
                 <form>
                     <label for="location">
                         <span class="fas fa-map-marker-alt location__icon"></span>
                     </label>
                         <input type="search" name="location" id="location" value="Paris, Belleville" minlength="4" maxlength="36" placeholder="Taper un nom de quartier">
-                    
                 </form>
             </div>
             <div>
@@ -42,7 +42,7 @@
 
 
         </section>
-        <section class="heading-second">
+        <section class="heading__second">
             <div>
                 <p>Fonctionnement</p>
             </div>
@@ -51,77 +51,79 @@
 
     </div>
 <!-- Title + Cards -->
-    <main class="container">
-        <div class="proj-">
-            <p>Restaurants</p>
-            <div class="cont-two-blocks">
-                <div class="cont-two-cards-sticker">
-                    <section>
+    <main class="cont">
+            <p class="cont__title">Restaurants</p>
+            <div class="cont__big__block">
+                <div class="cont__cards__sticker flex-c-nw">
+                    <section class="card__sticker">
                         <figure>
-                            <div>
-                                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                            <div class="card__sticker__img">
+                                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Petite portion de repas dans l'assiette: Saumon cuit, pomme de terre grillée et légumes verts">
                             </div>
-                            <figcaption>
-                                <div>
-                                    <p>La palette du goût</p>
-                                    <p>Ménilmontant</p>
+                            <div class="card__sticker__over" id="display-first">Nouveau</div>
+                            <figcaption class="flex-r-nw">
+                                <div class="text__position">
+                                    <p  class="text__position__bold">La palette du goût</p>
+                                    <p  class="text__position__thin">Ménilmontant</p>
                                 </div>
-                                <div><span>Icone coeur à remplir</span></div>
+                                <div class="icone__position"><span class="fas fa-heart">Icone coeur à remplir</span></div>
                             </figcaption>
                         </figure>
                     </section>
-                    <section>
+                    <section class="card__sticker">
                         <figure>
-                            <div>
-                                <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                            <div class="card__sticker__img">
+                                <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Repas dans l'assiette: olives, boulettes et viande avec sauce tomate">
                             </div>
-                            <figcaption>
-                                <div>
-                                    <p>La note enchantée</p>
-                                    <p>Charonne</p>
+                            <div class="card__sticker__over" id="display-second">Nouveau</div>
+                            <figcaption class="flex-r-nw">
+                                <div class="text__position">
+                                    <p  class="text__position__bold">La note enchantée</p>
+                                    <p  class="text__position__thin">Charonne</p>
                                 </div>
-                                <div><span>Icone coeur à remplir</span></div>
+                                <div class="icone__position"><span class="fas fa-heart">Icone coeur à remplir</span></div>
                             </figcaption>
                         </figure>
                     </section>
                 </div>
-                <div class="cont-two-cards-free">
-                    <section>
+                <div class="cont__cards__free flex-c-nw">
+                    <section class="cards__free">
                         <figure>
-                            <div>
-                                <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                            <div class="card__free__img">
+                                <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Dans l'assiette: un toast aux légumes verts surmontés de deux boules crémeuses blanches">
                             </div>
-                            <figcaption>
-                                <div>
-                                    <p>À la française</p>
-                                    <p>Cité Rouge</p>
+                            <div class="card__sticker__over" id="display-third">Nouveau</div>
+                            <figcaption class="flex-r-nw">
+                                <div class="text__position">
+                                    <p  class="text__position__bold">À la française</p>
+                                    <p  class="text__position__thin">Cité Rouge</p>
                                 </div>
-                                <div><span>Icone coeur à remplir</span></div>
+                                <div class="icone__position"><span class="fas fa-heart">Icone coeur à remplir</span></div>
                             </figcaption>
                         </figure>
                     </section>
-                    <section>
+                    <section class="cards__free">
                         <figure>
-                            <div>
-                                <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                            <div class="card__free__img">
+                                <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Dans une assiette rectangulaire: poisson blanc cuit, surmonté d'un poivron rouges et agrémenté de quelques dés de courgette en sauce">
                             </div>
-                            <figcaption>
-                                <div>
-                                    <p>Le délice des sens</p>
-                                    <p>Folie-Méricourt</p>
+                            <div class="card__sticker__over" id="display-forth">Nouveau</div>
+                            <figcaption class="flex-r-nw">
+                                <div class="text__position">
+                                    <p  class="text__position__bold">Le délice des sens</p>
+                                    <p  class="text__position__thin">Folie-Méricourt</p>
                                 </div>
-                                <div><span>Icone coeur à remplir</span></div>
+                                <div class="icone__position"><span class="fas fa-heart">Icone coeur à remplir</span></div>
                             </figcaption>
                         </figure> 
                     </section>
                 </div>
             </div>
-        </div>
     </main>
 
     <footer>
         <nav class="nav">
-            <picture class="header__logo">
+            <picture class="nav__header__logo">
                 <img src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
             </picture>
             <ul>
