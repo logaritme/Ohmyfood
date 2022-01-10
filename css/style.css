@@ -10,17 +10,16 @@
     1.5 | FOOTER ICONES PROPERTIES
 
 2 || DESKTOP LAYOUT
-    2.1 | MAIN CONTAINER
-        2.1.1 | HEADING  : LOADER
-        2.1.2 | HEADING : LOGO
-        2.1.3 | HEADING : SEARCH
-        2.1.4 | HEADING : EXPLORE
-        2.1.5 | HEADING : FUNCTIONING
-        2.1.6 | MAIN : FIRST CARD
-        2.1.7 | MAIN : SECOND CARD
-        2.1.8 | MAIN : THIRD CARD
-        2.1.9 | MAIN : FORTH CARD
-        2.2.1 | FOOTER
+    2.1 | HEADING  : LOADER
+    2.2 | HEADING : LOGO
+    2.3 | HEADING : SEARCH
+    2.4 | HEADING : EXPLORE
+    2.5 | HEADING : FUNCTIONING
+    2.6 | MAIN : FIRST CARD
+    2.7 | MAIN : SECOND CARD
+    2.8 | MAIN : THIRD CARD
+    2.9 | MAIN : FORTH CARD
+    2.10 | FOOTER
 
 3 || MEDIA QUERIES SPECIFIC RULES
     3.1 | TABLET MEDIA QUERY
@@ -33,7 +32,7 @@ Tip: you can jump to a specific section by searching for index name or id. ex : 
 
 /* 1 || GLOBAL SETTINGS */
 
-/* 1.1 | GENERAL PAGE LAYOUT */
+    /* 1.1 | GENERAL PAGE LAYOUT */
 
 html {
   width: 100%;
@@ -55,10 +54,11 @@ body {
   -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Raleway", Arial, "Arial Black", Courier New, Helvetica,
-    sans-serif;
+  font-family: "Roboto", Arial, "Arial Black", Courier New, Helvetica, sans-serif;
   font-size: 100%;
 }
+
+/* Titre des restaurants => font-family: "Shrikhand", Arial, "Arial Black", Courier New, Helvetica, sans-serif; */
 
 a {
   text-decoration: none;
@@ -106,7 +106,6 @@ q:after {
 button {
   margin: 0;
   padding: 0;
-  background-color: lavender;
 }
 
 div,
@@ -195,7 +194,7 @@ ul {
   flex-flow: row wrap;
 }
 
-/* 1.2 | ANIMATIONS */
+    /* 1.2 | ANIMATIONS */
 
 figure {
   width: 600px;
@@ -206,7 +205,7 @@ figure:hover {
   transform: scale(1.1);
 }
 
-/* 1.3 | HEADING ICONES PROPERTIES */
+    /* 1.3 | HEADING ICONES PROPERTIES */
 
 .fas.fa-map-marker-alt {
   width: 50px;
@@ -218,8 +217,45 @@ figure:hover {
   color: #000;
   background-color: lightgray;
   font-size: 24px;
-  
 }
+
+.fas.fa-mobile-alt {
+  width: 50px;
+  height: 32px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #aaaaaa;
+  background-color: #eeeeee;
+  font-size: 24px;
+}
+
+.fas.fa-list-ul {
+  width: 50px;
+  height: 32px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #aaaaaa;
+  background-color: #eeeeee;
+  font-size: 24px;
+}
+
+.fas.fa-store {
+  width: 50px;
+  height: 32px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #9356DC;
+  background-color: hsl(var(#9356DC),calc(var(--l) - 10%));
+  font-size: 24px;
+}
+
+    /* 1.4 | MAIN ICONES PROPERTIES */
 
 .fas.fa-heart {
   width: 50px;
@@ -228,25 +264,55 @@ figure:hover {
   align-self: center;
   justify-content: center;
   font-weight: 900;
-  color: purple;
+  color: #9356DC;
   background-color: #fff;
   font-size: 24px;
 }
 
-/* 2.1.1 | HEADING: LOGO */
+    /* 1.5 | FOOTER ICONES PROPERTIES */
+
+.fas.fa-utensils {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #fff;
+  background-color: #404040;
+  font-size: 16px;
+}
+
+.fas.fa-hands-helping {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #fff;
+  background-color: #404040;
+  font-size: 16px;
+}
+
+/* 2 || DESKTOP LAYOUT */
+
+    /* 2.1 | HEADING  : LOADER */
+    /* 2.2 | HEADING: LOGO */
 
 .header__logo {
 display: flex;
 flex-flow: column nowrap;
 align-items: center;
+margin: 20px 0;
 }
 
 .logo--big {
-  width: 35%;
+  width: 40%;
   border-radius: 0;
 }
 
-/* 2.1.3 | HEADING : SEARCH */
+    /* 2.3 | HEADING : SEARCH */
 
 form {
   width: 100%;
@@ -260,43 +326,82 @@ form {
   font-size: 24px;
 }
 
-/* 2.1.4 | HEADING : EXPLORE */
+    /* 2.4 | HEADING : EXPLORE */
 
 .book {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  background-color: #dddddd;
 }
 
-.button__first {
+.btn__first {
   width: 60%;
-  height: auto;
+  height: 30px;
   display: flex;
+  align-content: center;
   justify-content: center;
-  padding: 20px 0 60px 0;
+  padding: 20px 0 20px 0;
+  border: none;
+  border-radius: 38px;
+  margin: 0 auto;
+  border-color: transparent;
+  box-shadow: 0px 6px 10px #dddddd;
+  background: linear-gradient(175deg, #FF79DA, #9356DC ),
+              linear-gradient(-5deg, #FF79DA, #9356DC);
 }
 
-/* 2.1.5 | HEADING : FUNCTIONING */
+    /* 2.5 | HEADING : FUNCTIONING */
+
+.heading__second {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
 .heading__second__title {
-  padding-left: 5%;
+  padding: 40px 0 20px 0;
+  font-size: 26px;
 }
 
-.heading__second__functioning{
+.heading__second__functioning {
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  gap: 30px;
 }
 
-/* 2.1.6 | MAIN */
+.functioning__btn {
+  width: 100%;
+  height: 60px;
+  /* background-color: #eeeeee; */
+  border: none;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.functioning__btn--lighten {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(147,86,220, .1);
+  /* Pour scss écrire : background-color: lighten(rgba(147,86,220,1),10%) */
+  border: none;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+}
+
+    /* 2.6 | MAIN */
 
 main {
   width: 100%;
   height: auto;
-  background-color: lightgray;
+  background-color: #dddddd;
 }
 
-/* MARGINS MAIN */
+    /* MARGINS MAIN */
 
 .cont {
   width: 100%;
@@ -304,13 +409,14 @@ main {
   padding: 0 5% 60px 5%;
 }
 
-/* 2.1.6 | MAIN : TITLE */
+    /* MAIN : TITLE */
 
 .cont__title {
   padding: 30px 0 15px 0;
+  font-size: 26px;
 }
 
-/* 2.1.6 | MAIN : FIRST CARD */
+    /* MAIN : FIRST CARD */
 
 /* Layout between block and cards */
 
@@ -337,17 +443,43 @@ figure {
   background-color: #fff;
 }
 
-img {
+#img-first {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: ;
+  border-radius: 17px 17px 0px 0px;
+}
+
+#img-second {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: ;
+  border-radius: 17px 17px 0px 0px;
+}
+
+#img-third {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: ;
+  border-radius: 17px 17px 0px 0px;
+}
+
+#img-forth {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: ;
   border-radius: 17px 17px 0px 0px;
 }
 
 .card__sticker__img {
   width: 100%;
   height: calc(100% - 80px);
-  /* display: flex; */
+  display: flex;
+  align-items: flex-start;
   /* align-content: center; */
   /* justify-content: center; */
 }
@@ -355,7 +487,8 @@ img {
 .card__free__img {
   width: 100%;
   height: calc(100% - 80px);
-  /* display: flex; */
+  display: flex;
+  align-items: flex-start;
   /* align-content: center; */
   /* justify-content: center; */
 }
@@ -393,32 +526,47 @@ img {
   display: block;
 }
 
+.text__position__bold {
+  font-size: 18px;
+}
+
+.text__position__thin {
+  font-size: 16px;
+  font-weight: ;
+}
+
 .icone__position {
   width: 15%;
   display: block;
 }
 
-/* Footer */
+/* 2.2.1 | FOOTER */
 
 footer {
   width: 100%;
   height: auto;
-  background-color: darkgray;
-  overflow: hidden;
+  padding-left: 5%;
+  background: #404040;
 }
 
-.logo--little {
-  width: 25%;
+.logo__little {
+  width: 28%;
   border-radius: 0;
+  padding: 30px 0;
+  color: #fff;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+ul {
+  padding-bottom: 40px;
 }
 
 .icone--length {
-  width: 5%;
 }
 
 .text--length {
-  width: 95%;
-  padding-left: 50px;
+  padding-left: 10px;
 }
 
 .footer__text--color {

@@ -1,19 +1,19 @@
-@import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
+@use "./utils/variables";
+@use "./utils/functions";
+@use "./utils/mixins";
+@use "./utils/extensions";
 
-@import "./base/base";
-@import "./base/typography";
+@use "./base/base";
+@use "./base/typography";
 
-@import "./components/buttons";
+@use "./components/buttons";
 
-@import "./layout/header";
-@import "./layout/nav";
-@import "./layout/container";
-@import "./layout/form";
+@use "./layout/header";
+@use "./layout/nav";
+@use "./layout/container";
+@use "./layout/form";
 
 
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
+@use "./pages/work";
+@use "./pages/about";
+@use "./pages/project";

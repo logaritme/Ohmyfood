@@ -11,136 +11,167 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+
+
 
     <script src="https://kit.fontawesome.com/467f0c1e9b.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="flex-c-nw">
     <header class="flex-c-nw">
-    <div>
-        <div class="loading--animation">
+        <div>
+            <div class="loading--animation">
+            </div>
+            <div class="header">
+                <picture class="header__logo">
+                    <img class="logo--big" src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+                </picture>
+            </div>
         </div>
-        <div class="header">
-            <picture class="header__logo">
-                <img class="logo--big" src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
-            </picture>
+        <div class="heading__all">
+            <section class="heading__first">
+                <div>
+                    <form>
+                        <label for="location">
+                            <span class="fas fa-map-marker-alt location__icon"></span>
+                        </label>
+                        <input type="search" name="location" id="location" value="Paris, Belleville" minlength="4"
+                            maxlength="36" placeholder="Taper un nom de quartier">
+                    </form>
+                </div>
+                <div class="book">
+                    <h1>Réservez le menu qui vous convient</h2>
+                    <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
+                    <button class="btn__first">
+                        <h2>Explorer nos restaurants</h2>
+                    </button>
+                </div>
+            </section>
+            <section class="heading__second">
+                <h2 class="heading__second__title">Fonctionnement</h2>
+                <div class="heading__second__functioning">
+                    <button class="functioning__btn flex-r-nw">
+                        <div class="point">1</div>
+                        <span class="fas fa-mobile-alt"></span>
+                        <h3>Choisissez un restaurant</h3>
+                    </button>
+                    <button class="functioning__btn flex-r-nw">
+                        <div class="point">2</div>
+                        <span class="fas fa-list-ul"></span>
+                        <h3>Composer votre menu</h3>
+                    </button>
+                    <button class="functioning__btn--lighten flex-r-nw">
+                        <div class="point">3</div>
+                        <span class="fas fa-store"></span>
+                        <h3>Dégustez au restaurant</h3>
+                    </button>
+                </div>
+            </section>
+
         </div>
-    </div>
-    <div class="heading__all">
-        <section class="heading__first">
-            <div>
-                <form>
-                    <label for="location">
-                        <span class="fas fa-map-marker-alt location__icon"></span>
-                    </label>
-                    <input type="search" name="location" id="location" value="Paris, Belleville" minlength="4" maxlength="36" placeholder="Taper un nom de quartier">
-                </form>
-            </div>
-            <div class="book" >
-                <p>Réservez le menu qui vous convient</p>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <button class="button__first">
-                    <p>Explorer nos restaurants</p>
-                </button>
-            </div>
-
-
-        </section>
-        <section class="heading__second">
-            <p class="heading__second__title">Fonctionnement</p>
-            <div class="heading__second__functioning">
-                <div>Choisissez un restaurant</div>
-                <div>Composer votre menu</div>
-                <div>Dégustez au restaurant</div>
-            </div>
-
-        </section>
-
-    </div>
     </header>
-<!-- Title + Cards -->
+    <!-- Title + Cards -->
     <main class="cont">
-            <p class="cont__title">Restaurants</p>
-            <div class="cont__big__block flex-c-nw">
-                <div class="cont__cards__sticker flex-c-nw">
-                    <section class="card__sticker">
+        <h2 class="cont__title">Restaurants</h2>
+        <div class="cont__big__block flex-c-nw">
+            <div class="cont__cards__sticker flex-c-nw">
+                <section class="card__sticker">
+                    <a>
                         <figure>
                             <div class="card__sticker__img">
-                                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Petite portion de repas dans l'assiette: Saumon cuit, pomme de terre grillée et légumes verts">
+                                <img id="img-first" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                    alt="Petite portion de repas dans l'assiette: Saumon cuit, pomme de terre grillée et légumes verts">
                             </div>
                             <div class="card__sticker__over" id="display-first">Nouveau</div>
                             <figcaption class="flex-r-nw layout">
                                 <div class="text__position">
-                                    <p  class="text__position__bold">La palette du goût</p>
-                                    <p  class="text__position__thin">Ménilmontant</p>
+                                    <h3 class="text__position__bold">La palette du goût</h3>
+                                    <h4 class="text__position__thin">Ménilmontant</h4>
                                 </div>
                                 <div class="icone__position"><span class="fas fa-heart"></span></div>
                             </figcaption>
                         </figure>
-                    </section>
-                    <section class="card__sticker">
+                    </a>
+                </section>
+                <section class="card__sticker">
+                    <a>
                         <figure>
                             <div class="card__sticker__img">
-                                <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Repas dans l'assiette: olives, boulettes et viande avec sauce tomate">
+                                <img id="img-second" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                    alt="Repas dans l'assiette: olives, boulettes et viande avec sauce tomate">
                             </div>
                             <div class="card__sticker__over" id="display-second">Nouveau</div>
                             <figcaption class="flex-r-nw layout">
                                 <div class="text__position">
-                                    <p  class="text__position__bold">La note enchantée</p>
-                                    <p  class="text__position__thin">Charonne</p>
+                                    <h3 class="text__position__bold">La note enchantée</h3>
+                                    <h4 class="text__position__thin">Charonne</h4>
                                 </div>
                                 <div class="icone__position"><span class="fas fa-heart"></span></div>
                             </figcaption>
                         </figure>
-                    </section>
-                </div>
-                <div class="cont__cards__free flex-c-nw">
-                    <section class="cards__free">
+                    </a>
+                </section>
+            </div>
+            <div class="cont__cards__free flex-c-nw">
+                <section class="cards__free">
+                    <a>
                         <figure>
                             <div class="card__free__img">
-                                <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Dans l'assiette: un toast aux légumes verts surmontés de deux boules crémeuses blanches">
+                                <img id="img-third" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                    alt="Dans l'assiette: un toast aux légumes verts surmontés de deux boules crémeuses blanches">
                             </div>
                             <div class="card__sticker__over" id="display-third">Nouveau</div>
                             <figcaption class="flex-r-nw layout">
                                 <div class="text__position">
-                                    <p  class="text__position__bold">À la française</p>
-                                    <p  class="text__position__thin">Cité Rouge</p>
+                                    <h3 class="text__position__bold">À la française</h3>
+                                    <h4 class="text__position__thin">Cité Rouge</h4>
                                 </div>
                                 <div class="icone__position"><span class="fas fa-heart"></span></div>
                             </figcaption>
                         </figure>
-                    </section>
-                    <section class="cards__free">
+                    </a>
+                </section>
+                <section class="cards__free">
+                    <a>
                         <figure>
                             <div class="card__free__img">
-                                <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Dans une assiette rectangulaire: poisson blanc cuit, surmonté d'un poivron rouges et agrémenté de quelques dés de courgette en sauce">
+                                <img id="img-forth"
+                                    src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                    alt="Dans une assiette rectangulaire: poisson blanc cuit, surmonté d'un poivron rouges et agrémenté de quelques dés de courgette en sauce">
                             </div>
                             <div class="card__sticker__over" id="display-forth">Nouveau</div>
                             <figcaption class="flex-r-nw layout">
                                 <div class="text__position">
-                                    <p  class="text__position__bold">Le délice des sens</p>
-                                    <p  class="text__position__thin">Folie-Méricourt</p>
+                                    <h3 class="text__position__bold">Le délice des sens</h3>
+                                    <h4 class="text__position__thin">Folie-Méricourt</h4>
                                 </div>
                                 <div class="icone__position"><span class="fas fa-heart"></span></div>
                             </figcaption>
-                        </figure> 
-                    </section>
-                </div>
+                        </figure>
+                    </a>
+                </section>
             </div>
+        </div>
     </main>
 
     <footer>
-        <nav class="nav flex-c-nw" >
+        <nav class="nav flex-c-nw">
             <picture class="nav__header__logo">
-                <img class="logo--little" src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+                <img class="logo__little" src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
             </picture>
             <ul class="flex-c-nw">
-                <li class="nav__link"> <a class="flex-r-nw" href="/about.html"> <span class="footer__text--color icone--length">Icone1</span>
+                <li class="nav__link"> <a class="flex-r-nw" href="/about.html">
+                        <span class="fas fa-utensils footer__text--color icone--length"></span>
                         <p class="footer__text--color text--length">Proposer un restaurant</p>
                     </a> </li>
-                <li class="nav__link"> <a class="flex-r-nw" href="/about.html"> <span class="footer__text--color icone--length">Icone2</span>
+                <li class="nav__link"> <a class="flex-r-nw" href="/about.html">
+                        <span class="fas fa-hands-helping footer__text--color icone--length"></span>
                         <p class="footer__text--color text--length">Devenir partenaire</p>
                     </a> </li>
                 <li class="nav__link"> <a class="footer__text--color" href="/contact.html">Mentions légales</a> </li>
