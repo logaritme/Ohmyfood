@@ -86,7 +86,7 @@ margin: 20px 0;
 }
 
 .logo--big {
-  width: 40%;
+  width: 41%;
   border-radius: 0;
 }
 
@@ -139,7 +139,8 @@ form {
 
 .heading__second__title {
   padding: 40px 0 20px 0;
-  font-size: 26px;
+  font-size: 25px;
+  /* font-size: $font-size-primary; */
 }
 
 .heading__second__functioning {
@@ -191,7 +192,8 @@ main {
 
 .cont__title {
   padding: 30px 0 15px 0;
-  font-size: 26px;
+  font-size: 25px;
+  /* font-size: $font-size-primary; */
 }
 
     /* MAIN : FIRST CARD */
@@ -221,36 +223,52 @@ figure {
   background-color: #fff;
 }
 
+/* Original position of pictures 
 #img-first {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: ;
   border-radius: 17px 17px 0px 0px;
+} */
+
+#img-first {
+  width: 100%;
+  height: 123%;
+  object-fit: cover;
+  border-radius: 17px 17px 0px 0px;
+  position: relative;
+  top: 50%;
+  transform: translate( 0, -60%);
 }
 
 #img-second {
   width: 100%;
-  height: 100%;
+  height: 130%;
   object-fit: cover;
-  object-position: ;
   border-radius: 17px 17px 0px 0px;
+  position: relative;
+  top: 50%;
+  transform: translate( 0, -63%);
 }
 
 #img-third {
   width: 100%;
-  height: 100%;
+  height: 130%;
   object-fit: cover;
-  object-position: ;
   border-radius: 17px 17px 0px 0px;
+  position: relative;
+  top: 50%;
+  transform: translate( 0, -63%);
 }
 
 #img-forth {
   width: 100%;
-  height: 100%;
+  height: 123%;
   object-fit: cover;
-  object-position: ;
   border-radius: 17px 17px 0px 0px;
+  position: relative;
+  top: 50%;
+  transform: translate( 0, -60%);
 }
 
 .card__sticker__img {
@@ -260,6 +278,8 @@ figure {
   align-items: flex-start;
   /* align-content: center; */
   /* justify-content: center; */
+  border-radius: 17px 17px 0px 0px;
+  overflow: hidden;
 }
 
 .card__free__img {
@@ -269,6 +289,8 @@ figure {
   align-items: flex-start;
   /* align-content: center; */
   /* justify-content: center; */
+  border-radius: 17px 17px 0px 0px;
+  overflow: hidden;
 }
 
 
