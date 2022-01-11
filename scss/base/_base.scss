@@ -12,3 +12,117 @@ body {
     box-sizing: border-box;
     background: $colour-secondary;
 }
+
+
+a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  article {
+    display: flex;
+    align-items: flex-end;
+    background-color: white;
+  }
+  
+  article,
+  details,
+  hgroup,
+  menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    display: block;
+    flex-direction: column;
+  }
+  
+  b {
+    font-weight: bold;
+  }
+  
+  blockquote,
+  q {
+    margin: 0;
+    padding: 0;
+    quotes: none;
+  }
+  
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    margin: 0;
+    padding: 0;
+    content: "";
+    content: none;
+  }
+  
+  button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  div,
+  section,
+  header {
+    text-decoration: none;
+  }
+  
+  form,
+  input {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-decoration: none;
+  }
+  
+  header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: white;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+  }
+  
+  ol {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    grid-gap: 15px;
+    gap: 15px;
+    list-style-type: none;
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  p::first-letter {
+    font-style: unset;
+  }
+  
+  section {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    grid-gap: 15px;
+    gap: 15px;
+    list-style-type: none;
+  }
+  

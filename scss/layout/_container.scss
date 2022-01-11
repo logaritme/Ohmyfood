@@ -1,2 +1,23 @@
 
 
+/* REUSABLE */
+
+.flex-c-nw {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.flex-c-w {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.flex-r-nw {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.flex-r-w {
+  display: flex;
+  flex-flow: row wrap;
+}

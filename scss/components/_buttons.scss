@@ -1,0 +1,14 @@
+@use "../base" as *;
+
+// Button-sticker in card
+
+.card__sticker__over {
+  width: 23%;
+  position: relative;
+  top: -90px;
+  left: 265px;
+  font-family: $font-family-primary;
+  font-size: $font-size-tertiary;
+  background-color: darken($color-tertiary,50%)
+  background-color: $color-tertiary;
+}

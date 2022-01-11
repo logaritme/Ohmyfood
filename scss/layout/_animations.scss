@@ -1,0 +1,12 @@
+// ANIMATIONS
+ 
+    /* 1.2 | ANIMATIONS */
+
+    figure {
+      width: 600px;
+      height: auto;
+      transition: transform ease-in-out 0.3s;
+    }
+    figure:hover {
+      transform: scale(1.1);
+    }

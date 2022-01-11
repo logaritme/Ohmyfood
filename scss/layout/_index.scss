@@ -1,7 +1,9 @@
+
 // INDEX LAYOUT
-@forward "../";
-@forward "../";
-@forward "../";
-@forward "../";
-@forward "../";
-@forward "../";
+
+@forward "../layout/animations";
+@forward "../layout/bemglobal";
+@forward "../layout/container";
+@forward "../layout/form";
+@forward "../layout/header";
+@forward "../layout/nav";
