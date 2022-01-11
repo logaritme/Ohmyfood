@@ -1,0 +1,45 @@
+
+@use "../base/_base" as *;
+@use "../base/_fontandstandards" as *;
+@use "./base/_typography" as *;
+
+@use "../components/_bemspecifics" as *;
+@use "../components/_buttons" as *;
+
+@use "../layout/_bemglobal" as *;
+@use "../layout/_container" as *;
+@use "../layout/_form" as *;
+@use "../layout/_header" as *;
+@use "../layout/_nav" as *;
+
+@use "../pages/_page1" as *;
+@use "../pages/_page2" as *;
+@use "../pages/_page3" as *;
+@use "../pages/_page4" as *;
+@use "../pages/project" as *;
+@use "../pages/work" as *;
+
+@use "../themes/_thematiccode" as *;
+
+@use "../utils/_extensions" as *;
+@use "../utils/_mixins" as *;
+@use "../utils/_functions" as *;
+@use "../utils/_varfunctmixplaceh" as *;
+@use "../utils/_variables" as *;
+
+@use "../vendors/_bootstrapjqueryui" as *;
+
+
+ .mega__super {
+  font-family: fonts.$font-family-primary;
+  font-size: 48px;
+  color: aqua;
+  &__genial {
+    background-color: black;
+  }
+}
+
+.class__bidon {
+  display: flex;
+  align-items: center;
+}

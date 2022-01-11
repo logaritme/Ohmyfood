@@ -1,0 +1,41 @@
+@use "./base/_base.scss";
+@use "./base/_fontandstandards.scss";
+@use "./base/_typography.scss";
+@use "./components/_bemspecifics.scss";
+@use "./components/_buttons.scss";
+@use "./layout/_bemglobal.scss";
+@use "./layout/_container.scss";
+@use "./layout/_form.scss";
+@use "./layout/_header.scss";
+@use "./layout/_nav.scss";
+@use "./pages/_page1.scss";
+@use "./pages/_page2.scss";
+@use "./pages/_page3.scss";
+@use "./pages/_page4.scss";
+@use "./pages/project.scss";
+@use "./pages/work.scss";
+@use "./themes/_thematiccode.scss";
+@use "./utils/_extensions.scss";
+@use "./utils/_mixins.scss";
+@use "./utils/_functions.scss";
+@use "./utils/_varfunctmixplaceh.scss";
+@use "./utils/_variables.scss";
+@use "./vendors/_bootstrapjqueryui.scss";
+.scss__super {
+  font-size: 48;
+  color: aqua;
+}
+
+.scss__super__genial {
+  background-color: black;
+}
+
+.class__bidon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */
