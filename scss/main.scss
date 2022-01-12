@@ -1,33 +1,20 @@
 
-@use "../base/_base" as *;
-@use "../base/_fontandstandards" as *;
-@use "./base/_typography" as *;
 
-@use "../components/_bemspecifics" as *;
-@use "../components/_buttons" as *;
+// MAIN
 
-@use "../layout/_bemglobal" as *;
-@use "../layout/_container" as *;
-@use "../layout/_form" as *;
-@use "../layout/_header" as *;
-@use "../layout/_nav" as *;
+@use "../base" as *;
 
-@use "../pages/_page1" as *;
-@use "../pages/_page2" as *;
-@use "../pages/_page3" as *;
-@use "../pages/_page4" as *;
-@use "../pages/project" as *;
-@use "../pages/work" as *;
+@use "../components" as *;
 
-@use "../themes/_thematiccode" as *;
+@use "../layout" as *;
 
-@use "../utils/_extensions" as *;
-@use "../utils/_mixins" as *;
-@use "../utils/_functions" as *;
-@use "../utils/_varfunctmixplaceh" as *;
-@use "../utils/_variables" as *;
+@use "../pages" as *;
 
-@use "../vendors/_bootstrapjqueryui" as *;
+@use "../themes" as *;
+
+@use "../utils" as *;
+
+@use "../vendors" as *;
 
 
  .mega__super {
@@ -42,4 +29,16 @@
 .class__bidon {
   display: flex;
   align-items: center;
+}
+
+.text__position {
+  width: 75%;
+  display: block;
+  &__bold {
+    font-size: 18px;
+  }
+  &__thin {
+    font-size: 16px;
+    font-weight: ;
+  }
 }
