@@ -1,7 +1,7 @@
-@use "../base" as *;
+@use '../base' as *;
 
 // Button-sticker in card
-
+// Pb in this class, is it a fallback?
 .card__sticker__over {
   width: 23%;
   position: relative;
@@ -9,6 +9,6 @@
   left: 265px;
   font-family: $font-family-primary;
   font-size: $font-size-tertiary;
-  background-color: darken($color-tertiary,50%)
   background-color: $color-tertiary;
+  background-color: darken($color-tertiary,50%);
 }
