@@ -1,19 +1,71 @@
-
-.scss__super {
-  font-size: 48;
-  color: aqua;
+.test {
+  color: blue;
+  margin: 0;
+}
+.test .te {
+  color: red;
 }
 
-.scss__super__genial {
-  background-color: black;
+/*
+
+// MAIN FILE
+
+@use '../base' as*;
+
+@use '../components' as *;
+
+@use '../layout' as *;
+
+@use '../pages' as *;
+
+@use '../themes' as *;
+
+@use '../utils' as *;
+
+@use '../vendors' as *;
+
+
+ .mega__super {
+  font-family: $font-family-primary;
+  font-size: 48px;
+  color: aqua;
+  &__genial {
+    background-color: blue;
+  }
 }
 
 .class__bidon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
+
+.text__position {
+  width: 75%;
+  display: block;
+  &__bold {
+    font-size: 18px;
+  }
+  &__thin {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.exemple {
+  text-align-last: center;
+}
+
+.exempledeux {
+  text-decoration-style: dotted;
+}
+
+
+$color: (cold: #333ddd, hot: #ae3555, clear: #cccccc, dark: #7a9aaa);
+
+$txt-input: (
+  color: map-get($color, hot);
+)
+
+*/
+
 /*# sourceMappingURL=main.css.map */

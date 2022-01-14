@@ -1,4 +1,13 @@
+.test {
+  color: blue;
+  margin: 0;
 
+  .te {
+    color: red;
+  }
+}
+
+/*
 
 // MAIN FILE
 
@@ -46,3 +55,16 @@
 .exemple {
   text-align-last: center;
 }
+
+.exempledeux {
+  text-decoration-style: dotted;
+}
+
+
+$color: (cold: #333ddd, hot: #ae3555, clear: #cccccc, dark: #7a9aaa);
+
+$txt-input: (
+  color: map-get($color, hot);
+)
+
+*/
