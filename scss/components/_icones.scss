@@ -12,9 +12,9 @@
       display: flex;
       align-self: center;
       justify-content: center;
-      font-weight: 900;
+      font-weight: $icone-weight;
       color: $color-black;
-      background-color: lightgray;
+      background-color: $light-grey;
       font-size: $font-size-primary;
     }
     
@@ -24,9 +24,9 @@
       display: flex;
       align-self: center;
       justify-content: center;
-      font-weight: 900;
-      color: #aaaaaa;
-      background-color: #eeeeee;
+      font-weight: $icone-weight;
+      color: $darkest-grey;
+      background-color: $lightest-grey;
       font-size: $font-size-primary;
     }
     
@@ -36,9 +36,9 @@
       display: flex;
       align-self: center;
       justify-content: center;
-      font-weight: 900;
-      color: #aaaaaa;
-      background-color: #eeeeee;
+      font-weight: $icone-weight;
+      color: $darkest-grey;
+      background-color: $lightest-grey;
       font-size: $font-size-primary;
     }
     
@@ -48,7 +48,7 @@
       display: flex;
       align-self: center;
       justify-content: center;
-      font-weight: 900;
+      font-weight: $icone-weight;
       color: $color-primary;
       background-color: hsl(var($color-primary),calc(var(--l) - 10%));
       font-size: $font-size-primary;
@@ -62,7 +62,7 @@
       display: flex;
       align-self: center;
       justify-content: center;
-      font-weight: 900;
+      font-weight: $icone-weight;
       color: $color-primary;
       background-color: $color-white;
       font-size: $font-size-primary;
@@ -76,7 +76,7 @@
       display: flex;
       align-self: center;
       justify-content: center;
-      font-weight: 900;
+      font-weight: $icone-weight;
       color: $color-white;
       background-color: $color-dark;
       font-size: $font-size-quaternary;
@@ -88,7 +88,7 @@
       display: flex;
       align-self: center;
       justify-content: center;
-      font-weight: 900;
+      font-weight: $icone-weight;
       color: $color-white;
       background-color: $color-dark;
       font-size: $font-size-quaternary;
