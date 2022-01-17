@@ -54,9 +54,22 @@
       font-size: $font-size-primary;
     }
     
-        /* 1.4 | MAIN ICONES PROPERTIES */
-    
+        // 1.4 | MAIN ICONES PROPERTIES
+
+    // Solid heart
     .fas.fa-heart {
+      width: $icone-width-large;
+      height: 50px;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      font-weight: $icone-weight;
+      color: $color-primary;
+      background-color: $color-white;
+      font-size: $font-size-primary;
+    }
+    // Regular heart
+        .far.fa-heart {
       width: $icone-width-large;
       height: 50px;
       display: flex;

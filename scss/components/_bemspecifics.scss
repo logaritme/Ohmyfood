@@ -89,7 +89,7 @@
   }
   &__thin {
     font-size: $font-size-quaternary;
-    font-weight: ;
+  /*  font-weight: ;*/
   }
 }
 
@@ -111,8 +111,8 @@
   filter: invert(100%);
 }
 
-.icone--length {
-}
+/*.icone--length {
+}*/
 
 ul {
   padding-bottom: $padding-big;
