@@ -1,17 +1,12 @@
 //MAIN FILE
-
-@use 'base' as*;
-
-@use 'components' as *;
-
-@use 'layout' as *;
-
-@use 'pages' as *;
-
-@use 'utils' as *;
+@use 'base';
+@use 'components';
+@use 'layout';
+@use 'pages';
+@use 'utils';
 
 .mega__super__extra {
-  font-size: $font-size-primary;
+  font-size: green;
   font-size: 48px;
   color: aqua;
   &__genial {
