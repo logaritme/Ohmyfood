@@ -1,18 +1,27 @@
-//MAIN FILE
+
+
 @use 'base';
 @use 'components';
 @use 'layout';
 @use 'pages';
 @use 'utils';
 
-.mega__super__extra {
-  font-size: green;
-  font-size: 48px;
-  color: aqua;
-  &__genial {
-    background-color: blue;
-   }
- }
- .mega__super__extra {
-   color: white;
- }
+//MAIN FILE
+
+.test1 {
+  color: $color-tertiary;
+}
+
+.bidon {
+  margin: 1rem;
+}
+
+
+
+
+
+// @each $colour, $hex in $colours {
+  // .btn--#{$colour} {
+      // background-color: $hex;
+  // }
+// }

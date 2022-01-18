@@ -1,5 +1,11 @@
 
 
+
+@use 'components';
+@use 'layout';
+@use 'pages';
+@use 'utils';
+
 // FONTS
 
 $font-family-primary: "Roboto", sans-serif, Arial, "Arial Black", Courier New, Helvetica, sans-serif;
@@ -10,9 +16,3 @@ $font-size-primary: 2.5rem;
 $font-size-secondary: 2.2rem;
 $font-size-tertiary: 1.8rem;
 $font-size-quaternary: 1.6rem;
-
-body {
-    font-family: $font-family-primary;
-    color: $colour-primary;
-    font-size: $font-size-primary;
-}

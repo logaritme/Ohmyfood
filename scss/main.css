@@ -3,17 +3,11 @@
 @use 'layout';
 @use 'pages';
 @use 'utils';
-.mega__super__extra {
-  font-size: green;
-  font-size: 48px;
-  color: aqua;
+.test1 {
+  color: yellowgreen;
 }
 
-.mega__super__extra__genial {
-  background-color: blue;
-}
-
-.mega__super__extra {
-  color: white;
+.bidon {
+  margin: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

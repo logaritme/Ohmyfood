@@ -1,5 +1,11 @@
 
 
+
+@use 'components';
+@use 'layout';
+@use 'pages';
+@use 'utils';
+
 // tests à effacer
 
 $colours: (
@@ -9,12 +15,6 @@ $colours: (
   white: #fff,
   rust: #DB464B
 );
-
-@each $colour, $hex in $colours {
-  .btn--#{$colour} {
-      background-color: $hex;
-  }
-}
 
 // fin du test à effacer
 

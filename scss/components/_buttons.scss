@@ -1,4 +1,8 @@
-@use '../base' as *;
+@use 'base';
+@use 'components';
+@use 'layout';
+@use 'pages';
+@use 'utils';
 
 // Button-sticker in card
 // Pb in this class, is it a fallback?

@@ -1,6 +1,16 @@
-
+@use 'base';
+@use 'components';
+@use 'layout';
+@use 'pages';
+@use 'utils';
 
 // BEM Specifics
+
+body {
+  font-family: $font-family-primary;
+  color: $colour-primary;
+  font-size: $font-size-primary;
+}
 
 // 2.2 | HEADING: LOGO
 
