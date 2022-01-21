@@ -1,10 +1,7 @@
 
 
 
-@use 'components';
-@use 'layout';
-@use 'pages';
-@use 'utils';
+@use "./typography" ;
 
 // BASE
 
@@ -21,10 +18,10 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1;
-  background: $colour-secondary;
 }
 
 * {
+  font-family: $font-family-primary;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -37,9 +34,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: "Roboto", Arial, "Arial Black", Courier New, Helvetica, sans-serif;
 }
-
 
 a {
   text-decoration: none;

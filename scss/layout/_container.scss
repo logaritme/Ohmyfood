@@ -1,11 +1,7 @@
 
 
-@use 'base';
-@use 'components';
-@use 'layout';
-@use 'pages';
-@use 'utils';
 
+@use "../abstracts/";
 
   // CONTAINERS DISPLAYING
 
@@ -58,7 +54,7 @@ form {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  background-color: #dddddd;
+  background-color: $light-grey;
 }
 
 // 2.6 | MAIN
@@ -66,7 +62,7 @@ form {
 main {
   width: 100%;
   height: auto;
-  background-color: #dddddd;
+  background-color: $light-grey;
 }
     
 // MARGINS MAIN
@@ -135,5 +131,5 @@ footer {
   width: 100%;
   height: auto;
   padding-left: 5%;
-  background: #404040;
+  background: $color-dark;
 }

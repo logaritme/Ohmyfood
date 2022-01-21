@@ -7,20 +7,23 @@
     <meta name="description" content="Page description. No longer than 155 characters.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/x-icon" href="./images/???.png">
+    <!-- <link rel="icon" type="image/x-icon" href="./images/???.png"> -->
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="Title Here" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.example.com/" />
+    <meta property="og:image" content="http://example.com/image.jpg" />
+    <meta property="og:description" content="Description Here" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Shrikhand&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-
-
-
     <script src="https://kit.fontawesome.com/467f0c1e9b.js" crossorigin="anonymous"></script>
+    <link href="./css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="./scss/main.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body class="flex-c-nw">
@@ -39,14 +42,14 @@
                 <div>
                     <form>
                         <label for="location">
-                            <span class="fas fa-map-marker-alt location__icon"></span>
+                            <span class="fas fa-map-marker-alt"></span>
                         </label>
                         <input type="search" name="location" id="location" value="Paris, Belleville" minlength="4"
                             maxlength="36" placeholder="Taper un nom de quartier">
                     </form>
                 </div>
                 <div class="book">
-                    <h1>Réservez le menu qui vous convient</h2>
+                    <h1>Réservez le menu qui vous convient</h1>
                     <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
                     <button class="btn__first">
                         <h2>Explorer nos restaurants</h2>
@@ -56,21 +59,21 @@
             <section class="heading__second">
                 <h2 class="heading__second__title">Fonctionnement</h2>
                 <div class="heading__second__functioning">
-                    <button class="functioning__btn flex-r-nw">
+                    <div class="functioning__btn flex-r-nw">
                         <div class="point">1</div>
                         <span class="fas fa-mobile-alt"></span>
                         <h3>Choisissez un restaurant</h3>
-                    </button>
-                    <button class="functioning__btn flex-r-nw">
+                    </div>
+                    <div class="functioning__btn flex-r-nw">
                         <div class="point">2</div>
                         <span class="fas fa-list-ul"></span>
                         <h3>Composer votre menu</h3>
-                    </button>
-                    <button class="functioning__btn--lighten flex-r-nw">
+                    </div>
+                    <div class="functioning__btn--lighten flex-r-nw">
                         <div class="point">3</div>
                         <span class="fas fa-store"></span>
                         <h3>Dégustez au restaurant</h3>
-                    </button>
+                    </div>
                 </div>
             </section>
 
@@ -167,11 +170,11 @@
             </picture>
             <ul class="flex-c-nw">
                 <li class="nav__link"> <a class="flex-r-nw" href="/about.html">
-                        <span class="fas fa-utensils footer__text--color icone--length"></span>
+                        <span class="fas fa-utensils"></span>
                         <p class="footer__text--color text--length">Proposer un restaurant</p>
                     </a> </li>
                 <li class="nav__link"> <a class="flex-r-nw" href="/about.html">
-                        <span class="fas fa-hands-helping footer__text--color icone--length"></span>
+                        <span class="fas fa-hands-helping"></span>
                         <p class="footer__text--color text--length">Devenir partenaire</p>
                     </a> </li>
                 <li class="nav__link"> <a class="footer__text--color" href="/contact.html">Mentions légales</a> </li>
