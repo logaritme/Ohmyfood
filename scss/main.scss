@@ -1,10 +1,12 @@
 
 
 
-@use "./abstracts/" as *;
-@use "./components/" as *;
-@use "./layout/" as *;
-@use "./pages/" as *;
+@import './abstract/color';
+@import './abstract/mixin';
+@import './abstract/reset';
+@import './abstract/size';
+@import './abstract/typography';
+
 
 // tests à effacer
 // List ?
@@ -20,40 +22,40 @@
 
 // Standards
 
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+// $color-primary: #9356DC;
+// $color-secondary: #FF79DA;
+// $color-tertiary: #99E2D0;
 
-$color-invalid: #DB464B;
+// $color-invalid: #DB464B;
 
-$color-dark: #404040;
-$color-white: #fff;
-$color-black: #000;
+// $color-dark: #404040;
+// $color-white: #fff;
+// $color-black: #000;
 
-$lightest-grey: #eeeeee;
-$light-grey: #dddddd;
-$mid-grey: #cccccc;
-$darkest-grey: #aaaaaa;
+// $lightest-grey: #eeeeee;
+// $light-grey: #dddddd;
+// $mid-grey: #cccccc;
+// $darkest-grey: #aaaaaa;
 
-$icone-width-large: 50px;
-$icone-width-small: 20px;
+// $icone-width-large: 50px;
+// $icone-width-small: 20px;
 
-$padding-small: 10px;
-$padding-gap-normal: 20px;
-$padding-big: 40px;
+// $padding-small: 10px;
+// $padding-gap-normal: 20px;
+// $padding-big: 40px;
 
-$icone-weight: 900;
+// $icone-weight: 900;
 
 // FONTS
 
-$font-family-primary: "Roboto", sans-serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
-// Titre des restaurants en Shrikhand=>
-$font-family-secondary: "Shrikhand", serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
+// $font-family-primary: "Roboto", sans-serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
+// // Titre des restaurants en Shrikhand=>
+// $font-family-secondary: "Shrikhand", serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
 
-$font-size-primary: 2.5rem;
-$font-size-secondary: 2.2rem;
-$font-size-tertiary: 1.8rem;
-$font-size-quaternary: 1.6rem;
+// $font-size-primary: 2.5rem;
+// $font-size-secondary: 2.2rem;
+// $font-size-tertiary: 1.8rem;
+// $font-size-quaternary: 1.6rem;
 
 //MAIN FILE
 
@@ -238,8 +240,8 @@ body {
 // 2.4 | HEADING : EXPLORE
 
 .btn__first {
-  width: 60%;
-  height: 30px;
+  width: 60%; // use px or more something stable
+  height: 60px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -288,10 +290,7 @@ body {
       max-width: 10%;
     }
 
-h3 {
-  max-width: 50%;
-  font-size: $font-size-tertiary;
-}
+
 
 .functioning__btn--lighten {
       width: 100%;
