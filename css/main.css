@@ -256,11 +256,39 @@ body {
   border-radius: 0; }
 
 #location {
-  font-size: 2.5rem; }
+  width: 310px;
+  font-size: 2.5rem;
+  background-color: #dddddd;
+  border: none; }
+
+.book__text--first {
+  width: 70%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin: 0 auto;
+  color: #000;
+  padding-bottom: 20px;
+  font-size: 3.2rem;
+  font-weight: 900; }
+
+.book__text--second {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin: 0 auto;
+  color: #000;
+  padding-bottom: 30px;
+  font-weight: 400; }
 
 .btn__first {
   width: 60%;
-  height: 60px;
+  height: 70px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -272,6 +300,11 @@ body {
   box-shadow: 0px 6px 10px #dddddd;
   background: linear-gradient(175deg, #FF79DA, #9356DC), linear-gradient(-5deg, #FF79DA, #9356DC); }
 
+.btn__explo--color {
+  color: #fff;
+  position: relative;
+  top: -5px; }
+
 .heading__second {
   width: 100%;
   padding-left: 5%;
@@ -279,7 +312,10 @@ body {
 
 .heading__second__title {
   padding: 40px 0 20px 0;
-  font-size: 2.5rem; }
+  color: #000;
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem; }
 
 .heading__second__functioning {
   width: 100%;
@@ -290,7 +326,7 @@ body {
 .functioning__btn {
   width: 100%;
   height: 60px;
-  /* background-color: #eeeeee; */
+  background-color: #eeeeee;
   border: none;
   border-radius: 17px;
   display: flex;
@@ -299,6 +335,21 @@ body {
 
 .point {
   max-width: 10%; }
+
+.functioning__btn__txt--only {
+  color: #000;
+  margin: 5px; }
+
+.functioning__btn__txt {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  background-color: #eeeeee;
+  margin: 10px; }
 
 .functioning__btn--lighten {
   width: 100%;
@@ -549,6 +600,12 @@ figure:hover {
   align-items: center;
   margin: 20px 0; }
 
+.block__high--grey {
+  background-color: #dddddd;
+  display: flex;
+  justify-content: center;
+  padding-left: 20%; }
+
 form {
   padding: 20px 0 20px 0;
   display: flex;
@@ -556,10 +613,11 @@ form {
   justify-content: center; }
 
 .book {
+  height: auto;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-  background-color: #dddddd; }
+  padding: 40px 0;
+  background-color: #eeeeee; }
 
 main {
   height: auto;
@@ -571,7 +629,8 @@ main {
 
 .cont__title {
   padding: 30px 0 15px 0;
-  font-size: 2.5rem; }
+  font-size: 3.2rem;
+  color: #000; }
 
 .cont__big__block {
   gap: 20px; }

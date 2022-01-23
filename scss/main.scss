@@ -234,14 +234,47 @@ body {
 // 2.3 | HEADING : SEARCH
 
 #location {
+  width: 310px;
   font-size: $font-size-primary;
+  background-color: $light-grey;
+  border: none;
 }
 
 // 2.4 | HEADING : EXPLORE
 
+// Text before button
+
+.book__text--first {
+  width: 70%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin: 0 auto;
+  color: $color-black;
+  padding-bottom: $padding-gap-normal;
+  font-size: $font-size-xl;
+  font-weight: $icone-weight;
+  }
+.book__text--second {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin: 0 auto;
+  color: $color-black;
+  padding-bottom: $padding-gap-normal+10px;
+  font-weight: $weight-thin;
+}
+
+// Button
+
 .btn__first {
-  width: 60%; // use px or more something stable
-  height: 60px;
+  width: 60%; // use % or px
+  height: 70px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -255,55 +288,77 @@ body {
               linear-gradient(-5deg, $color-secondary, $color-primary);
 }
 
+.btn__explo--color {
+  color: $color-white;
+  position: relative;
+  top: -5px;
+}
   // 2.5 | HEADING : FUNCTIONING
     
 .heading__second {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
-    }
-    
-.heading__second__title {
-  padding: $padding-big 0 20px 0;
-  font-size: $font-size-primary;
 }
-    
+
+.heading__second__title {
+  padding: $padding-big 0 $padding-gap-normal 0;
+  color: $color-black;
+  font-size: $font-size-xl;
+  font-weight: $icone-weight;
+  letter-spacing: 0.1rem;
+}
+
 .heading__second__functioning {
       width: 100%;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
     }
-    
+
 .functioning__btn {
-      width: 100%;
-      height: 60px;
-      /* background-color: #eeeeee; */
-      border: none;
-      border-radius: 17px;
-      display: flex;
-      align-items: center;
-      margin: $padding-small;
-    }
+    width: 100%;
+    height: 60px;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    margin: $padding-small;
+  }
 
     .point {
       max-width: 10%;
     }
 
+.functioning__btn__txt--only {
+  color: $color-black;
+  margin: $padding-small - 5px;
+}
 
+.functioning__btn__txt {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  color: $color-black;
+  background-color: $lightest-grey;
+  margin: $padding-small;
+}
 
 .functioning__btn--lighten {
-      width: 100%;
-      height: 60px;
-      background-color: rgba(147,86,220, .1);
-      /* Pour scss écrire : background-color: lighten(rgba(147,86,220,1),10%) */
-      border: none;
-      border-radius: 17px;
-      display: flex;
-      align-items: center;
-      margin: $padding-small $padding-small $padding-big $padding-small;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(147,86,220, .1);
+    /* Pour scss écrire : background-color: lighten(rgba(147,86,220,1),10%) */
+    border: none;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    margin: $padding-small $padding-small $padding-big $padding-small;
     }
-    
 
 // MAIN
 // FIGCAPTIONS
@@ -636,6 +691,13 @@ figure {
 
 // 2.3 | HEADING : SEARCH
 
+.block__high--grey {
+  background-color: $light-grey;
+  display: flex;
+  justify-content: center;
+  padding-left: 20%;
+}
+
 form {
   // width: 100%;
   padding: 20px 0 20px 0;
@@ -647,10 +709,11 @@ form {
 // 2.4 | HEADING : EXPLORE
 
 .book {
+  height: auto;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-  background-color: $light-grey;
+  padding: $padding-big 0;
+  background-color:  $lightest-grey;
 }
 
 // 2.6 | MAIN
@@ -673,8 +736,10 @@ main {
 
 .cont__title {
   padding: 30px 0 15px 0;
-  font-size: $font-size-primary;
+  font-size: $font-size-xl;
+  color: $color-black;
 }
+
 // Layout between card blocks and between cards
 
 .cont__big__block {
