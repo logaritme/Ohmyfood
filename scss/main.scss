@@ -326,12 +326,10 @@ body {
   }
 
 .point {
-    width: 7rem;
-    height: 4.5rem;
-    // max-width: 9%;
+    width: 50px;
     color: $color-white;
     background-color: $color-primary;
-    border-radius: 50%;
+    border-radius: 20px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -341,12 +339,10 @@ body {
     }
 
 .point--last {
-    width: 5.5rem;
-    height: 4.5rem;
-    // max-width: 9%;
+    width: 40px;
     color: $color-white;
     background-color: $color-primary;
-    border-radius: 50%;
+    border-radius: 40px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -596,6 +592,7 @@ figure {
       display: flex;
       align-self: center;
       justify-content: center;
+      font-size: $font-size-quaternary;
       font-weight: $icone-weight;
       color: $darkest-grey;
       background-color: $lightest-grey;
@@ -608,6 +605,7 @@ figure {
       display: flex;
       align-self: center;
       justify-content: center;
+      font-size: $font-size-quaternary;
       font-weight: $icone-weight;
       color: $darkest-grey;
       background-color: $lightest-grey;
@@ -615,15 +613,7 @@ figure {
     }
     
     .fas.fa-store {
-      width: $icone-width-large;
-      height: 32px;
-      display: flex;
-      align-self: center;
-      justify-content: center;
-      font-weight: $icone-weight;
-      color: $color-primary;
-       /* Pb à résoudre ici */ background-color: hsl(var($color-primary),calc(var(--l) - 10%)); 
-      font-size: $font-size-primary;
+      padding: 0 2.5% 0 1%;
     }
     
         // 1.4 | MAIN ICONES PROPERTIES

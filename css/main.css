@@ -332,11 +332,10 @@ body {
   margin: 10px; }
 
 .point {
-  width: 7rem;
-  height: 4.5rem;
+  width: 50px;
   color: #fff;
   background-color: #9356DC;
-  border-radius: 50%;
+  border-radius: 20px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -345,11 +344,10 @@ body {
   left: -15px; }
 
 .point--last {
-  width: 5.5rem;
-  height: 4.5rem;
+  width: 40px;
   color: #fff;
   background-color: #9356DC;
-  border-radius: 50%;
+  border-radius: 40px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -535,6 +533,7 @@ figure {
   display: flex;
   align-self: center;
   justify-content: center;
+  font-size: 1.6rem;
   font-weight: 900;
   color: #aaaaaa;
   background-color: #eeeeee;
@@ -546,22 +545,14 @@ figure {
   display: flex;
   align-self: center;
   justify-content: center;
+  font-size: 1.6rem;
   font-weight: 900;
   color: #aaaaaa;
   background-color: #eeeeee;
   font-size: 2.5rem; }
 
 .fas.fa-store {
-  width: 50px;
-  height: 32px;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  font-weight: 900;
-  color: #9356DC;
-  /* Pb à résoudre ici */
-  background-color: hsl(var(#9356DC), calc(var(--l) - 10%));
-  font-size: 2.5rem; }
+  padding: 0 2.5% 0 1%; }
 
 .fas.fa-heart {
   width: 50px;
