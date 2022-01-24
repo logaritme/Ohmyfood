@@ -332,7 +332,16 @@ body {
   margin: 10px; }
 
 .point {
-  max-width: 10%; }
+  width: 50px;
+  height: 35px;
+  max-width: 9%;
+  color: #fff;
+  background-color: #9356DC;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 1.5; }
 
 .functioning__btn__txt--only {
   color: #000;
@@ -405,7 +414,8 @@ ul {
 
 /* Container for the two first cards*/
 .card__sticker {
-  width: 110%; }
+  width: 110%;
+  border-radius: 17px; }
 
 .card__sticker__over {
   width: 23%;
@@ -433,6 +443,9 @@ figure {
   border-radius: 17px 17px 0px 0px;
   overflow: hidden; }
 
+.card__free {
+  width: 110%; }
+
 .card__free__img {
   width: 100%;
   height: calc(100% - 80px);
@@ -445,33 +458,41 @@ figure {
 
 #img-first {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 17px 17px 0px 0px;
   position: relative;
-  top: 20%; }
+  top: 20%;
+  transform: translate(0, -15%); }
 
 #img-second {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 17px 17px 0px 0px;
   position: relative;
-  top: 20%; }
+  top: 20%;
+  transform: translate(0, -15%); }
 
 #img-third {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 17px 17px 0px 0px;
   position: relative;
-  top: 20%; }
+  top: 20%;
+  transform: translate(0, -15%); }
 
 #img-forth {
   width: 100%;
+  height: 100%;
   /* height: 123%;  exactement conforme maquette*/
   object-fit: cover;
   border-radius: 17px 17px 0px 0px;
   position: relative;
   top: 20%;
-  /* transform: translate( 0, -60%); exactement conforme maquette*/ }
+  /* transform: translate( 0, -60%); exactement conforme maquette*/
+  transform: translate(0, -15%); }
 
 /* 1.3 | HEADING ICONES PROPERTIES */
 .fas::before {
@@ -636,10 +657,10 @@ main {
 .cont__big__block {
   gap: 20px; }
 
-.cont__cards__sticker {
+.cont__card__sticker {
   gap: 20px; }
 
-.cont__cards__free {
+.cont__card__free {
   gap: 20px; }
 
 #display-first {
@@ -659,7 +680,8 @@ main {
   justify-content: center; }
 
 .layout {
-  background-color: #fff; }
+  background-color: #fff;
+  border-radius: 17px; }
 
 footer {
   height: auto;
