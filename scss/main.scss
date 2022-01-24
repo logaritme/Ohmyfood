@@ -325,18 +325,35 @@ body {
     margin: $padding-small;
   }
 
-    .point {
-    width: $icone-width-large;
-    height: 35px;
-    max-width: 9%;
+.point {
+    width: 7rem;
+    height: 4.5rem;
+    // max-width: 9%;
     color: $color-white;
     background-color: $color-primary;
     border-radius: 50%;
     display: flex;
     align-content: center;
     justify-content: center;
-    line-height: 1.5;
+    line-height: 1.6;
+    position: relative;
+    left: -15px;
     }
+
+.point--last {
+    width: 5.5rem;
+    height: 4.5rem;
+    // max-width: 9%;
+    color: $color-white;
+    background-color: $color-primary;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    line-height: 1.6;
+    position: relative;
+    left: -15px;
+      }
 
 .functioning__btn__txt--only {
   color: $color-black;
@@ -441,14 +458,16 @@ ul {
 
 .card__sticker__over {
   width: 23%;
+  height: 30px;
   position: relative;
-  top: -70%;
+  bottom: 220px;
   left: 70%;
+  line-height: 2;
   font-family: $font-family-primary;
-  font-size: $font-size-tertiary;
+  font-size: $font-size-quaternary;
+  font-weight: 700;
+  color: darken($color-tertiary, 50%);
   background-color: $color-tertiary;
-  // background-color: darken($color-tertiary,50%);
-  background-color: rgba(153,226,208, 1.5);
 }
 
 // CARDS

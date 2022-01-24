@@ -332,16 +332,30 @@ body {
   margin: 10px; }
 
 .point {
-  width: 50px;
-  height: 35px;
-  max-width: 9%;
+  width: 7rem;
+  height: 4.5rem;
   color: #fff;
   background-color: #9356DC;
   border-radius: 50%;
   display: flex;
   align-content: center;
   justify-content: center;
-  line-height: 1.5; }
+  line-height: 1.6;
+  position: relative;
+  left: -15px; }
+
+.point--last {
+  width: 5.5rem;
+  height: 4.5rem;
+  color: #fff;
+  background-color: #9356DC;
+  border-radius: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 1.6;
+  position: relative;
+  left: -15px; }
 
 .functioning__btn__txt--only {
   color: #000;
@@ -419,13 +433,16 @@ ul {
 
 .card__sticker__over {
   width: 23%;
+  height: 30px;
   position: relative;
-  top: -70%;
+  bottom: 220px;
   left: 70%;
+  line-height: 2;
   font-family: "Roboto", sans-serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
-  font-size: 1.8rem;
-  background-color: #99E2D0;
-  background-color: #99e2d0; }
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1b6150;
+  background-color: #99E2D0; }
 
 figure {
   max-width: 90.9%;
