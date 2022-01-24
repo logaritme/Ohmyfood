@@ -1,10 +1,5 @@
 @charset "UTF-8";
-html {
-  width: 100%;
-  height: 100%; }
-
 body {
-  width: 100%;
   max-width: 1440px;
   height: auto;
   box-sizing: border-box;
@@ -123,8 +118,12 @@ ul {
   list-style-type: none; }
 
 /* BASE */
+html {
+  width: 100%; }
+
 body {
-  max-width: 1440px;
+  width: 100%;
+  max-width: 767px;
   height: auto;
   box-sizing: border-box;
   margin: 0;
@@ -218,8 +217,8 @@ ol {
   margin: 0;
   padding: 0;
   display: flex;
-  grid-gap: 15px;
-  gap: 15px;
+  grid-gap: 0;
+  gap: 0;
   list-style-type: none; }
 
 p {
@@ -256,7 +255,6 @@ body {
   border-radius: 0; }
 
 #location {
-  width: 310px;
   font-size: 2.5rem;
   background-color: #dddddd;
   border: none; }
@@ -383,16 +381,27 @@ body {
   -webkit-filter: invert(100%);
   filter: invert(100%); }
 
+.text-transf {
+  font-family: "Shrikhand", serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 20px 0; }
+
 /*.icone--length {
 }*/
 ul {
   padding-bottom: 40px; }
 
+.nav__link {
+  padding: 5px 0; }
+
 .text--length {
-  padding-left: 10px; }
+  padding-left: 10px;
+  font-size: 1.6rem; }
 
 .footer__text--color {
-  color: #fff; }
+  color: #fff;
+  font-size: 1.6rem; }
 
 /* Container for the two first cards*/
 .card__sticker {
@@ -409,7 +418,7 @@ ul {
   background-color: #99e2d0; }
 
 figure {
-  max-width: 90%;
+  max-width: 90.9%;
   object-fit: cover;
   border-radius: 17px;
   background-color: #fff; }
@@ -436,41 +445,33 @@ figure {
 
 #img-first {
   width: 100%;
-  height: 123%;
   object-fit: cover;
   border-radius: 17px 17px 0px 0px;
   position: relative;
-  top: 50%;
-  transform: translate(0, -60%); }
+  top: 20%; }
 
 #img-second {
   width: 100%;
-  height: 130%;
   object-fit: cover;
   border-radius: 17px 17px 0px 0px;
   position: relative;
-  top: 50%;
-  transform: translate(0, -63%); }
+  top: 20%; }
 
 #img-third {
   width: 100%;
-  height: 130%;
   object-fit: cover;
   border-radius: 17px 17px 0px 0px;
   position: relative;
-  top: 50%;
-  transform: translate(0, -63%); }
+  top: 20%; }
 
 #img-forth {
   width: 100%;
-  height: 142%;
   /* height: 123%;  exactement conforme maquette*/
   object-fit: cover;
   border-radius: 17px 17px 0px 0px;
   position: relative;
-  top: 50%;
-  /* transform: translate( 0, -60%); exactement conforme maquette*/
-  transform: translate(0, -66%); }
+  top: 20%;
+  /* transform: translate( 0, -60%); exactement conforme maquette*/ }
 
 /* 1.3 | HEADING ICONES PROPERTIES */
 .fas::before {
