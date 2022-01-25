@@ -385,10 +385,11 @@ body {
   width: 75%;
   display: block; }
   .text__position__bold {
-    font-size: 1.8rem; }
+    font-size: 2rem;
+    font-weight: 900; }
   .text__position__thin {
-    font-size: 1.6rem;
-    /*  font-weight: ;*/ }
+    font-size: 2rem;
+    font-weight: 300; }
 
 .icone__position {
   width: 15%;

@@ -388,11 +388,12 @@ body {
   width: 75%;
   display: block;
   &__bold {
-    font-size: $font-size-tertiary;
+    font-size: $font-size-inter-sec-ter;
+    font-weight: $icone-weight;
   }
   &__thin {
-    font-size: $font-size-quaternary;
-  /*  font-weight: ;*/
+    font-size: $font-size-inter-sec-ter;
+    font-weight: $weight-thiner;
   }
 }
 
