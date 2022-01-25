@@ -426,8 +426,7 @@ ul {
 
 /* Container for the two first cards*/
 .card__sticker {
-  width: 110%;
-  border-radius: 17px; }
+  width: 110%; }
 
 .card__sticker__over {
   width: 23%;
@@ -444,15 +443,20 @@ ul {
 
 figure {
   max-width: 90.9%;
+  height: 350px;
   object-fit: cover;
   border-radius: 17px;
   background-color: #fff; }
 
 .card__sticker__img {
-  width: 100%;
-  height: calc(100% - 80px);
-  display: flex;
-  align-items: flex-start;
+  height: 200px;
+  /* align-content: center; */
+  /* justify-content: center; */
+  border-radius: 17px 17px 0px 0px;
+  overflow: hidden; }
+
+.card__sticker__img--less {
+  height: 200px;
   /* align-content: center; */
   /* justify-content: center; */
   border-radius: 17px 17px 0px 0px;
@@ -462,10 +466,7 @@ figure {
   width: 110%; }
 
 .card__free__img {
-  width: 100%;
-  height: calc(100% - 80px);
-  display: flex;
-  align-items: flex-start;
+  height: 200px;
   /* align-content: center; */
   /* justify-content: center; */
   border-radius: 17px 17px 0px 0px;
@@ -478,7 +479,8 @@ figure {
   border-radius: 17px 17px 0px 0px;
   position: relative;
   top: 20%;
-  transform: translate(0, -15%); }
+  transform: translate(0, -15%);
+  margin-bottom: 10px; }
 
 #img-second {
   width: 100%;
@@ -487,7 +489,8 @@ figure {
   border-radius: 17px 17px 0px 0px;
   position: relative;
   top: 20%;
-  transform: translate(0, -15%); }
+  transform: translate(0, -15%);
+  margin-bottom: 10px; }
 
 #img-third {
   width: 100%;
@@ -496,7 +499,8 @@ figure {
   border-radius: 17px 17px 0px 0px;
   position: relative;
   top: 20%;
-  transform: translate(0, -15%); }
+  transform: translate(0, -15%);
+  margin-bottom: 10px; }
 
 #img-forth {
   width: 100%;
@@ -507,7 +511,8 @@ figure {
   position: relative;
   top: 20%;
   /* transform: translate( 0, -60%); exactement conforme maquette*/
-  transform: translate(0, -15%); }
+  transform: translate(0, -15%);
+  margin-bottom: 1.6rem; }
 
 /* 1.3 | HEADING ICONES PROPERTIES */
 .fas::before {
@@ -686,6 +691,9 @@ main {
 #display-forth {
   display: none;
   justify-content: center; }
+
+figcaption {
+  height: 110px; }
 
 .layout {
   background-color: #fff;
