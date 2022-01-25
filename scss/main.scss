@@ -295,12 +295,13 @@ body {
     
 .heading__second {
   width: 100%;
-  padding-left: 5%;
+  padding-left: 7%;
   padding-right: 5%;
 }
 
 .heading__second__title {
   padding: $padding-big 0 $padding-gap-normal 0;
+  text-indent: -10px;
   color: $color-black;
   font-size: $font-size-xl;
   font-weight: $icone-weight;
@@ -446,9 +447,9 @@ ul {
 
 /* Container for the two first cards*/
 
-.card__sticker {
-  width: 110%;
-}
+// .card__sticker {
+  
+// }
 
 // Button-sticker on card
 
@@ -457,7 +458,7 @@ ul {
   height: $padding-higher;
   position: relative;
   bottom: 285px;
-  left: 65%;
+  left: 72%;
   line-height: 2;
   font-family: $font-family-primary;
   font-size: $font-size-quaternary;
@@ -480,9 +481,6 @@ ul {
 // Wrap the "wrap image"
 
 figure {
-  // width: 600px;
-  max-width: 90.9%;
-  // height: 350px;
   // height: 20vh;
   object-fit: cover;
   border-radius: 17px;
@@ -498,7 +496,7 @@ figure {
 }
 
 .card__free {
-  width: 110%;
+  width: 100%;
 }
 
 .card__free__img {
@@ -581,6 +579,7 @@ figure {
       display: flex;
       align-self: center;
       justify-content: center;
+      line-height: 2;
       font-weight: $icone-weight;
       color: $color-primary;
       background-color: $color-white;
@@ -629,12 +628,12 @@ figure {
  
     /* 1.2 | ANIMATIONS */
 
-    figure {
-      transition: transform ease-in-out 0.3s;
-    }
-    figure:hover {
-      transform: scale(1.1);
-    }
+    // figure {
+    //   transition: transform ease-in-out 0.3s;
+    // }
+    // figure:hover {
+    //   transform: scale(1.1);
+    // }
 
       // CONTAINERS DISPLAYING
 
@@ -720,6 +719,7 @@ main {
   // width: 100%;
   height: auto;
   padding: 0 5% 60px 5%;
+
 }
 
 // MAIN : TITLE
@@ -732,16 +732,8 @@ main {
 
 // Layout between card blocks and between cards
 
-.cont__big__block {
-  gap: $padding-gap-normal;
-}
-
-.cont__card__sticker {
-  gap: $padding-gap-normal;
-}
-
 .cont__card__free {
-  gap: $padding-gap-normal;
+  gap: $padding-higher;
 }
 
 // Option if you want to display or not the "Nouveau" sticker in the future
