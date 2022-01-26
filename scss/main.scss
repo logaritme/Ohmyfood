@@ -233,7 +233,8 @@ body {
 // 2.3 | HEADING : SEARCH
 
 #location {
-  font-size: $font-size-primary;
+  width: 150px;
+  font-size: $font-size-inter-sec-ter;
   background-color: $light-grey;
   border: none;
 }
@@ -684,7 +685,6 @@ figure {
   background-color: $light-grey;
   display: flex;
   justify-content: center;
-  padding-left: 20%;
 }
 
 form {
