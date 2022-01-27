@@ -67,7 +67,7 @@ html {
 
 body {
   width: 100%;
-  max-width: 767px;
+  max-width: 1440px;
   height: auto;
   box-sizing: border-box;
   margin: 0;
@@ -98,6 +98,7 @@ body {
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
   }
   
 article {
@@ -291,6 +292,7 @@ body {
   color: $color-white;
   position: relative;
   top: -5px;
+  padding: 1%;
 }
   // 2.5 | HEADING : FUNCTIONING
     
@@ -682,9 +684,9 @@ figure {
 // 2.3 | HEADING : SEARCH
 
 .block__high--grey {
-  background-color: $light-grey;
   display: flex;
   justify-content: center;
+  background: linear-gradient(to bottom, $mid-grey, $light-grey 10%);
 }
 
 form {
@@ -785,3 +787,52 @@ footer {
   background: $color-dark;
 }
 
+@media screen and (min-width: 768px) {
+  // Img logo of footer
+
+  // Element replaced
+// .logo__little {
+//   width: 28%;
+//   border-radius: 0;
+//   padding: $padding-higher 0;
+//   color: $color-white;
+//   -webkit-filter: invert(100%);
+//   filter: invert(100%);
+// }
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.text-transf {
+  display: flex;
+  justify-content: center;
+}
+
+/*.icone--length {
+}*/
+
+ul {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+// Position and color of text
+
+.text--length {
+  padding-left: 0;
+  font-size: $font-size-quaternary;
+}
+
+.footer__text--color {
+  font-size: $font-size-quaternary;
+}
+
+}
+
+@media screen and (min-width: 992px) {
+  
+}
