@@ -256,10 +256,11 @@ body {
   border-radius: 0; }
 
 #location {
-  width: 150px;
+  width: 177px;
   font-size: 2rem;
   background-color: #dddddd;
-  border: none; }
+  border: none;
+  padding-left: 5px; }
 
 .book__text--first {
   width: 70%;
@@ -316,8 +317,7 @@ body {
   text-indent: -10px;
   color: black;
   font-size: 3.2rem;
-  font-weight: 900;
-  letter-spacing: 0.1rem; }
+  font-weight: 900; }
 
 .heading__second__functioning {
   width: 100%;
@@ -416,6 +416,8 @@ body {
 /*.icone--length {
 }*/
 ul {
+  display: flex;
+  flex-flow: column nowrap;
   padding-bottom: 40px; }
 
 .nav__link {
@@ -447,7 +449,9 @@ ul {
 figure {
   object-fit: cover;
   border-radius: 17px;
-  background-color: white; }
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 5px 9px #cccccc; }
 
 .card__sticker__img {
   height: 200px;
@@ -560,7 +564,22 @@ figure {
 
 /* 1.2 | ANIMATIONS */
 /* CONTAINERS */
-/* REUSABLE */
+.cont__big__block {
+  display: flex;
+  flex-flow: column nowrap; }
+
+.cont__card__sticker {
+  display: flex;
+  flex-flow: column nowrap; }
+
+.flex__body {
+  display: flex;
+  flex-flow: column nowrap; }
+
+.flex__header {
+  display: flex;
+  flex-flow: column nowrap; }
+
 .flex-c-nw {
   display: flex;
   flex-flow: column nowrap; }
@@ -615,6 +634,8 @@ main {
   color: black; }
 
 .cont__card__free {
+  display: flex;
+  flex-flow: column nowrap;
   gap: 30px; }
 
 #display-first {
@@ -647,6 +668,58 @@ footer {
   background: #404040; }
 
 @media screen and (min-width: 768px) {
+  .point {
+    width: 5rem; }
+
+  .point--last {
+    width: 4rem; }
+
+  .book {
+    display: flex;
+    align-content: center; }
+
+  .book__text--first {
+    width: auto; }
+
+  .book__text--second {
+    width: auto; }
+
+  .heading__second__title {
+    align-self: center; }
+
+  .functioning__btn {
+    width: 56%; }
+
+  .functioning__btn--lighten {
+    width: 56%; }
+
+  .card__sticker__img {
+    height: 300px; }
+
+  .card__sticker__over {
+    bottom: 415px;
+    line-height: 1;
+    font-size: 2.8rem; }
+
+  .card__free__img {
+    height: 300px; }
+
+  figcaption {
+    height: 165px; }
+
+  .btn__first {
+    width: 40%; }
+
+  .text__position__bold {
+    font-size: 3rem; }
+
+  .text__position__thin {
+    font-size: 3rem; }
+
+  .fas.fa-heart {
+    line-height: 1;
+    font-size: 4.5rem; }
+
   footer {
     display: flex;
     flex-flow: column nowrap;
@@ -654,20 +727,105 @@ footer {
 
   .text-transf {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    font-size: 2.8rem; }
 
-  /*.icone--length {
-  }*/
   ul {
     display: flex;
     flex-flow: column nowrap;
     align-items: center; }
+
+  .fas.fa-utensils {
+    font-size: 2rem;
+    padding-right: 20px; }
+
+  .fas.fa-hands-helping {
+    font-size: 2rem;
+    padding-right: 20px; }
 
   .text--length {
     padding-left: 0;
     font-size: 1.6rem; }
 
   .footer__text--color {
-    font-size: 1.6rem; } }
+    font-size: 2.2rem; } }
+@media screen and (min-width: 992px) {
+  .flex__body {
+    display: flex;
+    flex-flow: row wrap; }
+
+  .heading__all {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 50px; }
+
+  .book {
+    padding: 85px 0; }
+
+  .btn__first {
+    width: 70%;
+    height: 65px; }
+
+  .flex__header {
+    width: 33.33%; }
+
+  .heading__second__title {
+    padding-bottom: 40px; }
+
+  .functioning__btn {
+    width: 100%;
+    height: 100px; }
+
+  .functioning__btn--lighten {
+    width: 100%;
+    height: 100px; }
+
+  main {
+    background-color: white; }
+
+  .cont {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 66.66%;
+    padding: 60px 25px 0 25px; }
+
+  .cont__title {
+    align-self: center; }
+
+  .cont__big__block {
+    padding-bottom: 25px; }
+
+  .cont__card__sticker {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 25px; }
+
+  .card__sticker__over {
+    width: 35%;
+    line-height: 1.3;
+    font-size: 2.4rem;
+    left: 60%; }
+
+  .cont__card__free {
+    display: flex;
+    flex-flow: row nowrap; }
+
+  .text__position__bold {
+    font-size: 2.4rem; }
+
+  .text__position__thin {
+    font-size: 2.4rem; }
+
+  .fas.fa-heart {
+    font-size: 3rem; }
+
+  footer {
+    width: 100%; }
+
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 175px;
+    padding-right: 75px; } }
 
 /*# sourceMappingURL=main.css.map */

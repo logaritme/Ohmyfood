@@ -234,10 +234,11 @@ body {
 // 2.3 | HEADING : SEARCH
 
 #location {
-  width: 150px;
+  width: 177px;
   font-size: $font-size-inter-sec-ter;
   background-color: $light-grey;
   border: none;
+  padding-left: 5px;
 }
 
 // 2.4 | HEADING : EXPLORE
@@ -308,7 +309,6 @@ body {
   color: $color-black;
   font-size: $font-size-xl;
   font-weight: $icone-weight;
-  letter-spacing: 0.1rem;
 }
 
 .heading__second__functioning {
@@ -430,6 +430,8 @@ body {
 }*/
 
 ul {
+  display: flex;
+  flex-flow: column nowrap;
   padding-bottom: $padding-big;
 }
 
@@ -488,6 +490,8 @@ figure {
   object-fit: cover;
   border-radius: 17px;
   background-color: $color-white;
+  width: 100%;
+  box-shadow: 0 5px 9px $mid-grey;
 }
 
 // Wrap image
@@ -646,7 +650,29 @@ figure {
 //   width: 100%;
 // }
 
-/* REUSABLE */
+.cont__big__block {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.cont__card__sticker {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+// FLEX
+
+.flex__body {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.flex__header {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+// FLEX REUSABLE
 
 .flex-c-nw {
   display: flex;
@@ -735,6 +761,8 @@ main {
 // Layout between card blocks and between cards
 
 .cont__card__free {
+  display: flex;
+  flex-flow: column nowrap;
   gap: $padding-higher;
 }
 
@@ -787,7 +815,10 @@ footer {
   background: $color-dark;
 }
 
+// TABLET RULES
+
 @media screen and (min-width: 768px) {
+//  768px to 992px
   // Img logo of footer
 
   // Element replaced
@@ -800,6 +831,79 @@ footer {
 //   filter: invert(100%);
 // }
 
+// HEADER TABLET
+
+.point {
+  width: 5rem;
+}
+
+.point--last {
+  width: 4rem;
+}
+
+.book {
+  display: flex;
+  align-content: center;
+}
+
+.book__text--first {
+  width: auto;
+}
+.book__text--second {
+  width: auto;
+}
+
+.heading__second__title {
+  align-self: center;
+}
+
+.functioning__btn {
+  width: 56%;
+}
+
+.functioning__btn--lighten {
+  width: 56%;
+}
+
+// MAIN TABLET
+
+.card__sticker__img {
+  height: 300px;
+}
+
+.card__sticker__over {
+  bottom: 415px;
+  line-height: 1;
+  font-size: 2.8rem;
+}
+
+.card__free__img {
+  height: 300px;
+}
+
+figcaption {
+  height: 165px;
+}
+
+.btn__first {
+  width: 40%;
+}
+
+.text__position__bold {
+    font-size: 3rem;
+}
+
+.text__position__thin {
+  font-size: 3rem;
+}
+
+.fas.fa-heart {
+  line-height: 1;
+  font-size: 4.5rem;
+}
+
+// FOOTER TABLET
+
 footer {
   display: flex;
   flex-flow: column nowrap;
@@ -809,10 +913,8 @@ footer {
 .text-transf {
   display: flex;
   justify-content: center;
+  font-size: 2.8rem;
 }
-
-/*.icone--length {
-}*/
 
 ul {
   display: flex;
@@ -820,7 +922,15 @@ ul {
   align-items: center;
 }
 
-// Position and color of text
+.fas.fa-utensils {
+  font-size: 2rem;
+  padding-right: 20px;
+}
+
+.fas.fa-hands-helping {
+  font-size: 2rem;
+  padding-right: 20px;
+}
 
 .text--length {
   padding-left: 0;
@@ -828,11 +938,117 @@ ul {
 }
 
 .footer__text--color {
-  font-size: $font-size-quaternary;
+  font-size: $font-size-secondary;
 }
 
 }
 
 @media screen and (min-width: 992px) {
+
+  .flex__body {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+// HEADER DESKTOP
+
+  .heading__all {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 50px;
+  }
+
+  .book {
+    padding: 85px 0;
+  }
+
+  .btn__first {
+    width: 70%;
+    height: 65px;
+  }
+
+  .flex__header {
+    width: 33.33%;
+  }
+
+  .heading__second__title {
+    padding-bottom: 40px;
+  }
+
+  .functioning__btn {
+    width: 100%;
+    height: 100px;
+  }
   
+  .functioning__btn--lighten {
+    width: 100%;
+    height: 100px;
+  }
+
+// MAIN DESKTOP
+
+  main {
+    background-color: $color-white;
+  }
+
+  .cont {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 66.66%;
+    padding: 60px 25px 0 25px;
+  }
+
+  .cont__title {
+    align-self: center;
+  }
+
+  .cont__big__block {
+    padding-bottom: 25px;
+  }
+
+  .cont__card__sticker {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 25px;
+  }
+
+  .card__sticker__over {
+    width: 35%;
+    line-height: 1.3;
+    font-size: $font-family-inter-prim-sec;
+    left: 60%;
+  }
+
+  .cont__card__free {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .text__position__bold {
+    font-size: $font-family-inter-prim-sec;
+  }
+
+  .text__position__thin {
+    font-size: $font-family-inter-prim-sec;
+  }
+
+  .fas.fa-heart {
+    font-size: 3rem;
+  }
+
+
+
+// FOOTER DESKTOP
+
+  footer {
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 175px;
+    padding-right: 75px;
+  }
+
 }
