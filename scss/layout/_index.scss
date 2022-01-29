@@ -8,3 +8,9 @@
 @forward 'container';
 @forward 'form';
 @forward 'header';
+
+@import './animations';
+@import './bemglobal';
+@import './container';
+@import './form';
+@import './header';
