@@ -430,8 +430,8 @@ ul {
   width: 26.5%;
   // height: $padding-higher;
   position: relative;
-  bottom: 285px;
-  left: 72%;
+  bottom: 260px;
+  left: 70%;
   // line-height: 2;
   font-family: $font-family-primary;
   font-size: 1.8rem;
@@ -766,13 +766,13 @@ main {
 // Border-radius of the cards
 
 figcaption {
-  height: 110px;
+  height: 90px;
 }
 
 .layout {
   background-color: $color-white;
   border-radius: 17px;
-  padding: 7% 0 0 4%;
+  padding: 5.5% 0 5.5% 4%;
 }
 
 // .layout--free {
@@ -855,7 +855,7 @@ footer {
 }
 
 figcaption {
-  height: 165px;
+  height: 130px;
 }
 
 .btn__first {
@@ -928,11 +928,12 @@ ul {
   .heading__all {
     display: flex;
     flex-flow: column nowrap;
-    gap: 55px;
+    gap: 0;
   }
 
   .book {
     padding: 85px 0;
+    height: 388px;
   }
 
   .btn__first {
@@ -945,7 +946,7 @@ ul {
   }
 
   .heading__second__title {
-    padding-bottom: 40px;
+    padding: 38px 0 20px 0;
   }
 
   .functioning__btn {
@@ -968,7 +969,7 @@ ul {
     display: flex;
     flex-flow: column nowrap;
     width: 66.66%;
-    padding: 60px 25px 0 25px;
+    padding: 35px 25px 0 25px;
   }
 
   .cont__title {
@@ -990,11 +991,16 @@ ul {
     line-height: 1.3;
     font-size: $font-family-inter-prim-sec;
     left: 60%;
+    bottom: 380px;
   }
 
   .cont__card__free {
     display: flex;
     flex-flow: row nowrap;
+  }
+
+  figcaption {
+    height: 100px;
   }
 
   .text__position__bold {
