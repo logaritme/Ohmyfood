@@ -60,7 +60,7 @@ nav {
 
 .header {
   height: 80px;
-  padding: 15px 0;
+  padding: 25px 0 10px 0;
 }
 
 // 1.2 TITLE LAYOUT
@@ -70,7 +70,7 @@ nav {
   max-width: 380px;
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding: 50px 0 30px 0;
 }
 
 .far.fa-heart {
@@ -85,6 +85,12 @@ nav {
   padding-left: 140%;
 }
 
+// 1.3 BETWEEN ENTREES AND PLATS, AND PLATS AND DESSERTS
+
+.inter-meal {
+  padding-top: 45px;
+}
+
 // 2.0 PICTURE
 
 .cont__logo-picture {
@@ -95,6 +101,19 @@ nav {
   overflow: hidden;
   }
 
+.fas.fa-arrow-left {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  font-weight: $icone-weight;
+  color: $color-dark;
+  font-size: $font-size-secondary;
+}
+
 .header__logo {
   width: auto;
   height: 50px;
@@ -103,7 +122,8 @@ nav {
 }
 
 .logo__big {
-  width: 41%;
+  width: 46%;
+  height: 70%;
   border-radius: 0;
 }
 
@@ -140,7 +160,8 @@ nav {
 // Real button
 
 .btn__first {
-  width: 60%; // use % or px
+  width: 50%;
+  min-width: 150px;
   height: 65px;
   display: flex;
   align-content: center;
@@ -199,7 +220,6 @@ h2 {
   height: 30px;
   font-size: 2rem;
   font-weight: 400;
-  padding-top: 40px;
   padding-bottom: 30px;
   border-bottom: 4px solid $color-tertiary;
   width: 50px;
