@@ -2,106 +2,145 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Ohmyfood</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo/favicon1.png">
+    <meta name="description" content="Page description. No longer than 155 characters.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="Title Here" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.example.com/" />
+    <meta property="og:image" content="http://example.com/image.jpg" />
+    <meta property="og:description" content="Description Here" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Ohmyfood</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/467f0c1e9b.js" crossorigin="anonymous"></script>
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../css/_page1.css" rel="stylesheet" type="text/css">
 </head>
 <body>
         <div class="cont__palette">
-            <header class="cont__logo-picture" style="overflow: hidden;">
+            <header class="cont__logo-picture">
                 <div class="header">
                     <div class="header__logo">
-                        <img class="logo__big" src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+                        <img class="logo__big" src="../images/logo/ohmyfood.png" alt="Logo Ohmyfood">
                     </div>
                 </div>
                 <div class="cont__img-pages">
-                    <img class="img-pages" src="./images/restaurants/palette.jpg"
+                    <img class="img-pages" src="../images/restaurants/palette.jpg"
                         alt="Petite portion de repas dans l'assiette: Saumon cuit, pomme de terre grillée et légumes verts">
                 </div>
             </header>
             <main class="palette">
                 <div>
                     <nav>
-                        <div>
+                        <div class="layout__text-heart">
                             <h1>La palette du goût</h1>
-                            <div><span fas fa-heart></span></div>
+                            <div><span class="far fa-heart"></span></div>
                         </div>
                         
-                        <ul>
+                        <ul class="group__direction">
                             <h2>ENTRÉES</h2>
-                            <li>
-                                <div>
+                            <li class="line__direction btn__food">
+                                <div class="btn__food__text">
                                     <h3>Fricassée d'escargot</h3>
                                     <h4>Au piment d'Espelette </h4>
                                 </div>
-                                <div class="price">25€</div>
+                                <div class="price">
+                                    <div class="price__amount">25€</div>
+                                    <div class="price__anim"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div>
+                            <li class="line__direction btn__food">
+                                <div class="btn__food__text">
                                     <h3>Foie gras de canard mi-cuit</h3>
                                     <h4>Et ses copeaux de truffe noire</h4>
                                 </div>
-                                <div class="price">35€</div>
+                                <div class="price">
+                                    <div class="price__amount">35€</div>
+                                    <div class="price__anim"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div>
+                            <li class="line__direction btn__food">
+                                <div class="btn__food__text">
                                     <h3>Oeuf au plat</h3>
                                     <h4>Assaisonné à la truffe sur lit de caviar</h4>
                                 </div>
-                                <div class="price">20€</div>
+                                <div class="price">
+                                    <div class="price__amount">20€</div>
+                                    <div class="price__anim"></div>
+                                </div>
                             </li>
                         </ul>
-                        <ul>
+                        <ul class="group__direction">
                             <h2>PLATS</h2>
-                            <li>
-                                <div>
+                            <li class="line__direction btn__food">
+                                <div class="btn__food__text">
                                     <h3>Filet de boeuf aux herbes</h3>
                                     <h4>Accompagné de sa ribambelle de légumes</h4>
                                 </div>
-                                <div class="price">40€</div>
+                                <div class="price">
+                                    <div class="price__amount">40€</div>
+                                    <div class="price__anim"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div>
+                            <li class="line__direction btn__food">
+                                <div class="btn__food__text">
                                     <h3>Parmentier de queue de boeuf</h3>
                                     <h4>À la truffe noire sur sa purée de panais</h4>
                                 </div>
-                                <div class="price">35€</div>
+                                <div class="price">
+                                    <div class="price__amount">35€</div>
+                                    <div class="price__anim"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div>
+                            <li class="line__direction btn__food">
+                                <div class="btn__food__text">
                                     <h3>Filet de turbot</h3>
                                     <h4>Aux agrumes</h4>
                                 </div>
-                                <div class="price">44€</div>
+                                <div class="price">
+                                    <div class="price__amount">44€</div>
+                                    <div class="price__anim"></div>
+                                </div>
                             </li>
                         </ul>
-                        <ul>
+                        <ul class="group__direction">
                             <h2>DESSERTS</h2>
-                            <li>
-                                <div>
+                            <li class="line__direction btn__food">
+                                <div class="btn__food__text">
                                     <h3>Paris-Brest</h3>
                                     <h4>Revisité</h4>
                                 </div>
-                                <div class="price">18€</div>
+                                <div class="price">
+                                    <div class="price__amount">18€</div>
+                                    <div class="price__anim"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div>
+                            <li class="line__direction btn__food">
+                                <div class="btn__food__text">
                                     <h3>Macaron au chocolat d'exception </h3>
                                     <h4>Et glace à la vanille de Madagascar</h4>
                                 </div>
-                                <div class="price">22€</div>
+                                <div class="price">
+                                    <div class="price__amount">22€</div>
+                                    <div class="price__anim"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div>
+                            <li class="line__direction btn__food">
+                                <div class="btn__food__text">
                                     <h3>Mousse au chocolat </h3>
                                     <h4>Au piment d'Espelette et à la truffe noire</h4>
                                 </div>
-                                <div class="price">23€</div>
+                                <div class="price">
+                                    <div class="price__amount">23€</div>
+                                    <div class="price__anim"></div>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -111,9 +150,9 @@
         <footer>
             <nav class="nav">
                 <picture class="header__logo">
-                    <img src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+                    <img src="../images/logo/ohmyfood.png" alt="Logo Ohmyfood">
                 </picture>
-                <ul>
+                <ul class="footer__line__direction">
                     <li class="nav__link"> <a href="/about.html"> <span>Icone 1</span>
                             <p>Proposer un restaurant</p>
                         </a> </li>
