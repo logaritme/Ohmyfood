@@ -1,12 +1,14 @@
 {
   "scripts": {
-    "watch": "sass --watch scss/main.scss:css/main.css"
+    "watch": "sass --watch scss/main.scss:css/main.css",
+    "prefix": "postcss ./css/main.css --use autoprefixer -d ./css/prefixed/"
   },
   "dependencies": {
     "sass": "^1.48.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
-    "postcss-cli": "^9.1.0"
+    "postcss-cli": "^9.1.0",
+    "browserslist": "last 4 versions"
   }
 }
