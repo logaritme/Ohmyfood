@@ -144,7 +144,7 @@ nav {
 
 .btn__food {
     width: 93.5%; // use % or px
-    height: 80px;
+    height: 93px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -186,6 +186,7 @@ nav {
 // Two childs in .btn__food
 
 .btn__food__text {
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -227,13 +228,22 @@ h2 {
 }
 
 h3 {
+  width: 100%;
   height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 2.2rem;
   font-weight: 700;
 }
 
 h4 {
+  // width: clamp (200px, 52vw, 1440px);
+  width: 98.3%;
   height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 1.8rem;
   font-weight: 400;
 }
