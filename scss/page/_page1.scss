@@ -140,11 +140,21 @@ nav {
 
 // 3.0 BUTTONS
 
-// False buttons
+// Cards buttons & Checker buttons
+
+.cont__btn {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn__direction {
+  display: flex;
+  flex-flow: column nowrap;
+}
 
 .btn__food {
     width: 93.5%; // use % or px
-    height: 93px;
+    height: $card-height;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -154,10 +164,21 @@ nav {
     margin: 0 auto;
     border-color: transparent;
     box-shadow: 0px 6px 10px $light-grey;
-    background-color: white;
+    background-color: $color-white;
+    cursor: pointer;
 }
 
-// Real button
+.fas.fa-check-circle {
+  display: inline-block;
+  font-size: 27px;
+  padding-top: 35px;
+  color: $color-white;
+  background-color: $color-tertiary;
+  border-radius: 0 18px 18px 0;
+
+}
+
+// Real button to book
 
 .btn__first {
   width: 50%;
@@ -174,6 +195,7 @@ nav {
   box-shadow: 0px 6px 10px $light-grey;
   background: linear-gradient(175deg, $color-secondary, $color-primary ),
               linear-gradient(-5deg, $color-secondary, $color-primary);
+  cursor: pointer;
 }
 
 .btn__explo--color {
@@ -186,7 +208,7 @@ nav {
 // Two childs in .btn__food
 
 .btn__food__text {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -195,17 +217,68 @@ nav {
 }
 
 .price {
+  width: 20%;
   display: flex;
-  padding-right: 6%;
+  position: relative;
+  top: $padding-gap-normal * (-1);
 }
 
 .price__amount {
+  height: $card-height;
   display: flex;
-  align-items: flex-end;
-  line-height: 0.3;
+  align-items: center;
   font-size: 1.8rem;
   font-weight: 700;
+  padding-top: 35px;
 }
+
+.cont__price__anim {
+  width: 20%;
+  height: $card-height;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 18px 18px 0;
+  background-color: grey;
+  z-index: 0;
+  transform: scaleX(0) translate(385%, -120%);
+  transform-origin: 485% 50%;
+  transition: transform 500ms;
+}
+
+.price__anim {
+  width: 100%;
+  height: $card-height;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 18px 18px 0;
+  background-color: $color-tertiary;
+}
+
+.price__anim__bar {
+  height: $card-height;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 18px 18px 0;
+  background-color: $color-tertiary;
+  transform: rotate(0turn);
+  transition: transform 500ms;
+}
+
+.cont__btn {
+    &:hover {
+        & + .cont__price__anim {
+          transform: scaleX(1)  translate(385%, -120%);
+          & > .price__anim > .price__anim__bar {
+            transform: rotate(1turn);
+          }
+        }
+    }
+  }
+
+// price__anim__bar = vright à faire tourner
 
 // 4.0 TYPO
 // Typo h1 h2 h3 h4
@@ -229,7 +302,7 @@ h2 {
 
 h3 {
   width: 100%;
-  height: 20px;
+  height: 22px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -239,8 +312,8 @@ h3 {
 
 h4 {
   // width: clamp (200px, 52vw, 1440px);
-  width: 98.3%;
-  height: 20px;
+  width: 100%;
+  height: 18px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
