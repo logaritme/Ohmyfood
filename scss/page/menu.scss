@@ -142,7 +142,7 @@ nav {
 
 // Cards buttons & Checker buttons
 
-.cont__btn {
+.container__btn {
   cursor: pointer;
   background-color: transparent;
 }
@@ -205,7 +205,7 @@ nav {
   font-weight: 400;
 }
 
-// Two childs in .btn__food
+// Two childs in .btn__food ... now only one child .btn__food__text
 
 .btn__food__text {
   width: 80%;
@@ -216,14 +216,18 @@ nav {
   gap: 10px;
 }
 
-.price {
+.price__anim {
   width: 20%;
   display: flex;
-  position: relative;
-  top: $padding-gap-normal * (-1);
+  // position: relative;
+  // left: 80%;
+  // top: -110px;
+  transform: translate(420%, -185px);
+  transition: transform 500ms;
+  // top: $padding-gap-normal * (-1);
 }
 
-.price__amount {
+.price__anim__amount {
   height: $card-height;
   display: flex;
   align-items: center;
@@ -232,21 +236,21 @@ nav {
   padding-top: 35px;
 }
 
-.container__price__anim {
+.container__band__anim {
   width: 20%;
   height: $card-height;
-  position: relative;
   display: flex;
   justify-content: center;
+  position: relative;
+  top: -198px;
   border-radius: 0 18px 18px 0;
   background-color: grey;
-  z-index: 0;
-  transform: scaleX(0) translate(385%, -120%);
-  
-  transition: transform 600ms;
+  transform: scaleX(0) translate(385%, 120%);
+  transform-origin: 485%;
+  transition: transform 500ms;
 }
 
-.price__anim {
+.band__anim {
   width: 100%;
   height: $card-height;
   position: relative;
@@ -254,10 +258,9 @@ nav {
   justify-content: center;
   border-radius: 0 18px 18px 0;
   background-color: $color-tertiary;
-  transform-origin: 485% 50%;
 }
 
-.price__anim__bar {
+.band__anim__check {
   height: $card-height;
   position: relative;
   display: flex;
@@ -265,21 +268,35 @@ nav {
   border-radius: 0 18px 18px 0;
   background-color: $color-tertiary;
   transform: rotate(0turn);
-  transition: transform 600ms;
+  transition: transform 500ms;
 }
 
-.cont__btn {
+// .container__btn {
+//     &:hover {
+//         & + .container__band__anim {
+//           transform: scaleX(1)  translate(385%, -120%);
+//           & > .band__anim > .band__anim__check {
+//             transform: rotate(1turn);
+//           }
+//         }
+//     }
+//   }
+.container__btn:hover > .container__band__anim {
+  transform: scaleX(1) translate(385%, 120%);
+}
+.container__btn:hover > .container__band__anim > .band__anim > .band__anim__check {
+    transform: rotate(1turn);
+}
+
+  .container__btn {
     &:hover {
-        & + .container__price__anim {
-          transform: scaleX(1)  translate(385%, -120%);
-          & > .price__anim > .price__anim__bar {
-            transform: rotate(1turn);
-          }
-        }
+      & > .price__anim {
+        transform: translate(340%, -185px);
+      }
     }
   }
 
-// price__anim__bar = vright à faire tourner
+// band__anim__check = vright à faire tourner
 
 // 4.0 TYPO
 // Typo h1 h2 h3 h4
