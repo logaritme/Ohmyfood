@@ -371,7 +371,7 @@ nav {
 .fas.fa-check-circle {
   display: inline-block;
   font-size: 27px;
-  padding-top: 35px;
+  padding-top: 32px;
   color: white;
   background-color: #99e2d0;
   border-radius: 0 18px 18px 0; }
@@ -420,7 +420,7 @@ nav {
   font-weight: 700;
   padding-top: 35px; }
 
-.cont__price__anim {
+.container__price__anim {
   width: 20%;
   height: 90px;
   position: relative;
@@ -430,8 +430,7 @@ nav {
   background-color: grey;
   z-index: 0;
   transform: scaleX(0) translate(385%, -120%);
-  transform-origin: 485% 50%;
-  transition: transform 500ms; }
+  transition: transform 600ms; }
 
 .price__anim {
   width: 100%;
@@ -440,7 +439,8 @@ nav {
   display: flex;
   justify-content: center;
   border-radius: 0 18px 18px 0;
-  background-color: #99e2d0; }
+  background-color: #99e2d0;
+  transform-origin: 485% 50%; }
 
 .price__anim__bar {
   height: 90px;
@@ -450,11 +450,11 @@ nav {
   border-radius: 0 18px 18px 0;
   background-color: #99e2d0;
   transform: rotate(0turn);
-  transition: transform 500ms; }
+  transition: transform 600ms; }
 
-.cont__btn:hover + .cont__price__anim {
+.cont__btn:hover + .container__price__anim {
   transform: scaleX(1) translate(385%, -120%); }
-  .cont__btn:hover + .cont__price__anim > .price__anim > .price__anim__bar {
+  .cont__btn:hover + .container__price__anim > .price__anim > .price__anim__bar {
     transform: rotate(1turn); }
 
 h1 {
@@ -542,4 +542,4 @@ ul {
   padding-left: 10px;
   font-size: 1.6rem; }
 
-/*# sourceMappingURL=_page1.css.map */
+/*# sourceMappingURL=menu.css.map */

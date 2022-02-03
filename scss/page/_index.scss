@@ -2,14 +2,6 @@
 
 
 // INDEX PAGES
-@forward 'page0';
-@forward 'page1';
-@forward 'page2';
-@forward 'page3';
-@forward 'page4';
+@forward 'menu';
 
-@import './page0';
-@import './page1';
-@import './page2';
-@import './page3';
-@import './page4';
+@import './menu';

@@ -171,7 +171,7 @@ nav {
 .fas.fa-check-circle {
   display: inline-block;
   font-size: 27px;
-  padding-top: 35px;
+  padding-top: 32px;
   color: $color-white;
   background-color: $color-tertiary;
   border-radius: 0 18px 18px 0;
@@ -232,7 +232,7 @@ nav {
   padding-top: 35px;
 }
 
-.cont__price__anim {
+.container__price__anim {
   width: 20%;
   height: $card-height;
   position: relative;
@@ -242,8 +242,8 @@ nav {
   background-color: grey;
   z-index: 0;
   transform: scaleX(0) translate(385%, -120%);
-  transform-origin: 485% 50%;
-  transition: transform 500ms;
+  
+  transition: transform 600ms;
 }
 
 .price__anim {
@@ -254,6 +254,7 @@ nav {
   justify-content: center;
   border-radius: 0 18px 18px 0;
   background-color: $color-tertiary;
+  transform-origin: 485% 50%;
 }
 
 .price__anim__bar {
@@ -264,12 +265,12 @@ nav {
   border-radius: 0 18px 18px 0;
   background-color: $color-tertiary;
   transform: rotate(0turn);
-  transition: transform 500ms;
+  transition: transform 600ms;
 }
 
 .cont__btn {
     &:hover {
-        & + .cont__price__anim {
+        & + .container__price__anim {
           transform: scaleX(1)  translate(385%, -120%);
           & > .price__anim > .price__anim__bar {
             transform: rotate(1turn);
