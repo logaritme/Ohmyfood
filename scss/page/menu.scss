@@ -216,6 +216,8 @@ nav {
   gap: 10px;
 }
 
+// About price animation
+
 .price__anim {
   width: 20%;
   display: flex;
@@ -236,17 +238,21 @@ nav {
   padding-top: 35px;
 }
 
+// About band animation
+
 .container__band__anim {
   width: 20%;
   height: $card-height;
   display: flex;
   justify-content: center;
   position: relative;
-  top: -198px;
+  top: -90px;
+  left: 1092px;
   border-radius: 0 18px 18px 0;
   background-color: grey;
-  transform: scaleX(0) translate(385%, 120%);
-  transform-origin: 485%;
+  transform-origin: right;
+  transform: scale(0, 0);
+  // transform: translate(385%, 120%);
   transition: transform 500ms;
 }
 
@@ -258,6 +264,7 @@ nav {
   justify-content: center;
   border-radius: 0 18px 18px 0;
   background-color: $color-tertiary;
+  transition: transform 500ms;
 }
 
 .band__anim__check {
@@ -267,7 +274,6 @@ nav {
   justify-content: center;
   border-radius: 0 18px 18px 0;
   background-color: $color-tertiary;
-  transform: rotate(0turn);
   transition: transform 500ms;
 }
 
@@ -281,9 +287,47 @@ nav {
 //         }
 //     }
 //   }
+
+// State elements
+
 .container__btn:hover > .container__band__anim {
-  transform: scaleX(1) translate(385%, 120%);
+  transform: scaleX(1);
+  // transform: translate(385%, 120%);
+  animation-duration: 500ms;
+  // animation: green__bar 500ms;
 }
+
+// @keyframes green__bar {
+//   0% {
+//     transform: scale(0, 0);
+//   }
+//   1% {
+//     transform: scaleY(0.8);
+//     animation-duration: 50ms;
+//   }
+//   2% {
+//     transform: scaleY(0.86);
+//     animation-duration: 50ms;
+//   }
+//   3% {
+//     transform: scaleY(0.925);
+//     animation-duration: 50ms;
+//   }
+//   4% {
+//     transform: scaleY(0.96);
+//     animation-duration: 50ms;
+//   }
+//   5% {
+//     transform: scaleY(0.98);
+//     animation-duration: 300ms;
+//   }
+//   6% , 100% {
+//     transform: scale(1, 1);
+//   }
+// }
+
+// About checked animation
+
 .container__btn:hover > .container__band__anim > .band__anim > .band__anim__check {
     transform: rotate(1turn);
 }
@@ -296,18 +340,19 @@ nav {
     }
   }
 
+
 // band__anim__check = vright à faire tourner
 
 // 4.0 TYPO
 // Typo h1 h2 h3 h4
 
-h1 {
+nav > div > h1 {
   font-family: "Shrikhand", Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
   font-size: 3.2rem;
   font-weight: 500;
 }
 
-h2 {
+nav > ul > h2 {
   width: 50px;
   height: 30px;
   font-size: 2rem;
@@ -318,7 +363,7 @@ h2 {
   margin-left: 4%;
 }
 
-h3 {
+li > div > h3 {
   width: 100%;
   height: 22px;
   overflow: hidden;
@@ -328,7 +373,7 @@ h3 {
   font-weight: 700;
 }
 
-h4 {
+li > div > h4 {
   // width: clamp (200px, 52vw, 1440px);
   width: 100%;
   height: 18px;

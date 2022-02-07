@@ -426,11 +426,12 @@ nav {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -198px;
+  top: -90px;
+  left: 1092px;
   border-radius: 0 18px 18px 0;
   background-color: grey;
-  transform: scaleX(0) translate(385%, 120%);
-  transform-origin: 485%;
+  transform-origin: right;
+  transform: scale(0, 0);
   transition: transform 500ms; }
 
 .band__anim {
@@ -440,7 +441,8 @@ nav {
   display: flex;
   justify-content: center;
   border-radius: 0 18px 18px 0;
-  background-color: #99e2d0; }
+  background-color: #99e2d0;
+  transition: transform 500ms; }
 
 .band__anim__check {
   height: 90px;
@@ -449,11 +451,11 @@ nav {
   justify-content: center;
   border-radius: 0 18px 18px 0;
   background-color: #99e2d0;
-  transform: rotate(0turn);
   transition: transform 500ms; }
 
 .container__btn:hover > .container__band__anim {
-  transform: scaleX(1) translate(385%, 120%); }
+  transform: scaleX(1);
+  animation-duration: 500ms; }
 
 .container__btn:hover > .container__band__anim > .band__anim > .band__anim__check {
   transform: rotate(1turn); }
@@ -461,12 +463,12 @@ nav {
 .container__btn:hover > .price__anim {
   transform: translate(340%, -185px); }
 
-h1 {
+nav > div > h1 {
   font-family: "Shrikhand", Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
   font-size: 3.2rem;
   font-weight: 500; }
 
-h2 {
+nav > ul > h2 {
   width: 50px;
   height: 30px;
   font-size: 2rem;
@@ -476,7 +478,7 @@ h2 {
   width: 50px;
   margin-left: 4%; }
 
-h3 {
+li > div > h3 {
   width: 100%;
   height: 22px;
   overflow: hidden;
@@ -485,7 +487,7 @@ h3 {
   font-size: 2.2rem;
   font-weight: 700; }
 
-h4 {
+li > div > h4 {
   width: 100%;
   height: 18px;
   overflow: hidden;
