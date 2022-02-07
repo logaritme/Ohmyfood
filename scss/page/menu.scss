@@ -143,30 +143,36 @@ nav {
 // Cards buttons & Checker buttons
 
 .container__btn {
+  max-width: 90%;
+  margin: 0 5%;
   cursor: pointer;
   background-color: transparent;
+  overflow: hidden;
 }
 
 .btn__direction {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
 }
 
 .btn__food {
-    width: 93.5%; // use % or px
+    width: 80%; // use 93.5% or px or auto for j-c:strecth
     height: $card-height;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
     padding: $padding-gap-normal 0 $padding-gap-normal 0;
     border: none;
     border-radius: 18px;
-    margin: 0 auto;
+    margin: 0;
     border-color: transparent;
     box-shadow: 0px 6px 10px $light-grey;
     background-color: $color-white;
     cursor: pointer;
+    overflow: hidden;
+    z-index: 30;
 }
+
+
 
 .fas.fa-check-circle {
   display: inline-block;
@@ -214,25 +220,24 @@ nav {
   justify-content: center;
   padding-left: 3%;
   gap: 10px;
+  overflow: hidden;
+  z-index: 30;
 }
 
 // About price animation
 
 .price__anim {
-  width: 20%;
+  margin: 20px 20px 20px auto;
   display: flex;
-  // position: relative;
-  // left: 80%;
-  // top: -110px;
-  transform: translate(420%, -185px);
-  transition: transform 500ms;
-  // top: $padding-gap-normal * (-1);
+  align-items: flex-end;
+  transition: all 500ms;
+  z-index: 50;
 }
 
 .price__anim__amount {
   height: $card-height;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-size: 1.8rem;
   font-weight: 700;
   padding-top: 35px;
@@ -246,26 +251,24 @@ nav {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -90px;
-  left: 1092px;
-  border-radius: 0 18px 18px 0;
-  background-color: grey;
-  transform-origin: right;
-  transform: scale(0, 0);
-  // transform: translate(385%, 120%);
-  transition: transform 500ms;
-}
-
-.band__anim {
-  width: 100%;
-  height: $card-height;
-  position: relative;
-  display: flex;
-  justify-content: center;
   border-radius: 0 18px 18px 0;
   background-color: $color-tertiary;
-  transition: transform 500ms;
+  margin-right: -256px;
+  transform-origin: right;
+  transition: all 500ms;
+  z-index: 50;
 }
+
+// .band__anim {
+//   width: 100%;
+//   height: $card-height;
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   border-radius: 0 18px 18px 0;
+//   background-color: $color-tertiary;
+//   transition: transform 500ms;
+// }
 
 .band__anim__check {
   height: $card-height;
@@ -274,7 +277,7 @@ nav {
   justify-content: center;
   border-radius: 0 18px 18px 0;
   background-color: $color-tertiary;
-  transition: transform 500ms;
+  transition: all 500ms;
 }
 
 // .container__btn {
@@ -288,14 +291,7 @@ nav {
 //     }
 //   }
 
-// State elements
 
-.container__btn:hover > .container__band__anim {
-  transform: scaleX(1);
-  // transform: translate(385%, 120%);
-  animation-duration: 500ms;
-  // animation: green__bar 500ms;
-}
 
 // @keyframes green__bar {
 //   0% {
@@ -326,7 +322,13 @@ nav {
 //   }
 // }
 
-// About checked animation
+// About animation
+
+// Hover elements
+
+.container__btn:hover > .container__band__anim {
+  margin-right: 0;
+}
 
 .container__btn:hover > .container__band__anim > .band__anim > .band__anim__check {
     transform: rotate(1turn);
@@ -335,7 +337,8 @@ nav {
   .container__btn {
     &:hover {
       & > .price__anim {
-        transform: translate(340%, -185px);
+        transform: translate(0, 0);
+        margin-left: -307px;
       }
     }
   }
