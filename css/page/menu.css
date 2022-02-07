@@ -415,14 +415,15 @@ nav {
 .price__anim {
   margin: 20px 20px 20px auto;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   transition: all 500ms;
   z-index: 50; }
 
 .price__anim__amount {
   height: 90px;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
+  padding-bottom: 15px;
   font-size: 1.8rem;
   font-weight: 700;
   padding-top: 35px; }
@@ -430,12 +431,14 @@ nav {
 .container__band__anim {
   width: 20%;
   height: 90px;
+  position: relative;
+  top: -20px;
   display: flex;
   justify-content: center;
   position: relative;
   border-radius: 0 18px 18px 0;
   background-color: #99e2d0;
-  margin-right: -256px;
+  margin-right: -205px;
   transform-origin: right;
   transition: all 500ms;
   z-index: 50; }
@@ -449,15 +452,14 @@ nav {
   background-color: #99e2d0;
   transition: all 500ms; }
 
-.container__btn:hover > .container__band__anim {
+.container__btn:hover > .btn__food > .container__band__anim {
   margin-right: 0; }
 
-.container__btn:hover > .container__band__anim > .band__anim > .band__anim__check {
+.container__btn:hover > .btn__food > .container__band__anim > .band__anim > .band__anim__check {
   transform: rotate(1turn); }
 
-.container__btn:hover > .price__anim {
-  transform: translate(0, 0);
-  margin-left: -307px; }
+.container__btn > .btn__food:hover > .price__anim {
+  transform: translate(0, 0); }
 
 nav > div > h1 {
   font-family: "Shrikhand", Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
