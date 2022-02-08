@@ -138,9 +138,9 @@ nav {
   object-fit: cover;
 }
 
-// 3.0 BUTTONS
+// 3.0 CARDS & HOVER CARDS
 
-// Cards buttons & Checker buttons
+// 3.1 CARDS
 
 .container__btn {
   max-width: 90%;
@@ -169,10 +169,7 @@ nav {
     background-color: $color-white;
     cursor: pointer;
     overflow: hidden;
-    z-index: 30;
 }
-
-
 
 .fas.fa-check-circle {
   display: inline-block;
@@ -184,7 +181,82 @@ nav {
 
 }
 
-// Real button to book
+// .btn__food HAS ONLY ONE CHILD WHO IS .btn__food__text
+
+// 1ST BLOCK IN ROW : TEXTS
+
+.btn__food__text {
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding-left: 3%;
+  gap: 10px;
+  overflow: hidden;
+}
+
+// 2ND BLOCK IN ROW : PRICE
+
+.price__anim {
+  margin: 20px 20px 20px auto;
+  display: flex;
+  align-items: center;
+  transition: all 500ms;
+}
+
+.price__anim__amount {
+  height: $card-height;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-top: 35px;
+}
+
+// 3RD BLOCK IN ROW : BAND ANIMATION
+
+.container__band__anim {
+  width: 20%;
+  height: $card-height;
+  position: relative;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 0 18px 18px 0;
+  background-color: $color-tertiary;
+  margin-right: -20%;
+  transform-origin: right;
+  transition: all 500ms;
+}
+
+.band__anim__check {
+  height: $card-height;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 18px 18px 0;
+  background-color: $color-tertiary;
+  transform: rotate(0turn);
+  transition: all 500ms;
+}
+
+// 3.2 HOVER CARDS
+
+// MAKES COME THE GREEN BAND
+
+.container__btn:hover > .btn__food > .container__band__anim {
+  margin-right: 0;
+}
+
+//  MAKES ROTATE 360° THE V-CHECKER
+
+.container__btn:hover > .btn__food > .container__band__anim > .band__anim__check {
+  transform: rotate(1turn);
+}
+
+// 4.0 BUTTON TO ORDER
 
 .btn__first {
   width: 50%;
@@ -211,146 +283,9 @@ nav {
   font-weight: 400;
 }
 
-// Two childs in .btn__food ... now only one child .btn__food__text
+// 5.0 TYPO
 
-.btn__food__text {
-  width: 80%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  padding-left: 3%;
-  gap: 10px;
-  overflow: hidden;
-  z-index: 30;
-}
-
-// About price animation
-
-.price__anim {
-  margin: 20px 20px 20px auto;
-  display: flex;
-  align-items: center;
-  transition: all 500ms;
-  z-index: 50;
-}
-
-.price__anim__amount {
-  height: $card-height;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 15px;
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding-top: 35px;
-}
-
-// About band animation
-
-.container__band__anim {
-  width: 20%;
-  height: $card-height;
-  position: relative;
-  top: -20px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  border-radius: 0 18px 18px 0;
-  background-color: $color-tertiary;
-  margin-right: -205px;
-  transform-origin: right;
-  transition: all 500ms;
-  z-index: 50;
-}
-
-// .band__anim {
-//   width: 100%;
-//   height: $card-height;
-//   position: relative;
-//   display: flex;
-//   justify-content: center;
-//   border-radius: 0 18px 18px 0;
-//   background-color: $color-tertiary;
-//   transition: transform 500ms;
-// }
-
-.band__anim__check {
-  height: $card-height;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  border-radius: 0 18px 18px 0;
-  background-color: $color-tertiary;
-  transition: all 500ms;
-}
-
-// .container__btn {
-//     &:hover {
-//         & + .container__band__anim {
-//           transform: scaleX(1)  translate(385%, -120%);
-//           & > .band__anim > .band__anim__check {
-//             transform: rotate(1turn);
-//           }
-//         }
-//     }
-//   }
-
-
-
-// @keyframes green__bar {
-//   0% {
-//     transform: scale(0, 0);
-//   }
-//   1% {
-//     transform: scaleY(0.8);
-//     animation-duration: 50ms;
-//   }
-//   2% {
-//     transform: scaleY(0.86);
-//     animation-duration: 50ms;
-//   }
-//   3% {
-//     transform: scaleY(0.925);
-//     animation-duration: 50ms;
-//   }
-//   4% {
-//     transform: scaleY(0.96);
-//     animation-duration: 50ms;
-//   }
-//   5% {
-//     transform: scaleY(0.98);
-//     animation-duration: 300ms;
-//   }
-//   6% , 100% {
-//     transform: scale(1, 1);
-//   }
-// }
-
-// About animation
-
-// Hover elements
-
-.container__btn:hover > .btn__food > .container__band__anim {
-  margin-right: 0;
-}
-
-.container__btn:hover > .btn__food > .container__band__anim > .band__anim > .band__anim__check {
-    transform: rotate(1turn);
-}
-
-  .container__btn > .btn__food {
-    &:hover {
-      & > .price__anim {
-        transform: translate(0, 0);
-        // margin-left: -307px;
-      }
-    }
-  }
-
-
-// band__anim__check = vright à faire tourner
-
-// 4.0 TYPO
-// Typo h1 h2 h3 h4
+// TYPO h1 TO h4
 
 nav > div > h1 {
   font-family: "Shrikhand", Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
@@ -390,7 +325,7 @@ li > div > h4 {
   font-weight: 400;
 }
 
-// 5.0 FOOTER
+// 6.0 FOOTER
 
 footer {
   height: auto;
@@ -405,7 +340,12 @@ footer {
   padding: 20px 0;
 }
 
-ul {
+main > div > nav > ul {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+footer > nav > ul {
   display: flex;
   flex-flow: column nowrap;
 }

@@ -369,8 +369,7 @@ nav {
   box-shadow: 0px 6px 10px #dddddd;
   background-color: white;
   cursor: pointer;
-  overflow: hidden;
-  z-index: 30; }
+  overflow: hidden; }
 
 .fas.fa-check-circle {
   display: inline-block;
@@ -379,6 +378,60 @@ nav {
   color: white;
   background-color: #99e2d0;
   border-radius: 0 18px 18px 0; }
+
+.btn__food__text {
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding-left: 3%;
+  gap: 10px;
+  overflow: hidden; }
+
+.price__anim {
+  margin: 20px 20px 20px auto;
+  display: flex;
+  align-items: center;
+  transition: all 500ms; }
+
+.price__anim__amount {
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-top: 35px; }
+
+.container__band__anim {
+  width: 20%;
+  height: 90px;
+  position: relative;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 0 18px 18px 0;
+  background-color: #99e2d0;
+  margin-right: -20%;
+  transform-origin: right;
+  transition: all 500ms; }
+
+.band__anim__check {
+  height: 90px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 18px 18px 0;
+  background-color: #99e2d0;
+  transform: rotate(0turn);
+  transition: all 500ms; }
+
+.container__btn:hover > .btn__food > .container__band__anim {
+  margin-right: 0; }
+
+.container__btn:hover > .btn__food > .container__band__anim > .band__anim__check {
+  transform: rotate(1turn); }
 
 .btn__first {
   width: 50%;
@@ -401,65 +454,6 @@ nav {
   padding: 0 3%;
   font-size: 2.1rem;
   font-weight: 400; }
-
-.btn__food__text {
-  width: 80%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  padding-left: 3%;
-  gap: 10px;
-  overflow: hidden;
-  z-index: 30; }
-
-.price__anim {
-  margin: 20px 20px 20px auto;
-  display: flex;
-  align-items: center;
-  transition: all 500ms;
-  z-index: 50; }
-
-.price__anim__amount {
-  height: 90px;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 15px;
-  font-size: 1.8rem;
-  font-weight: 700;
-  padding-top: 35px; }
-
-.container__band__anim {
-  width: 20%;
-  height: 90px;
-  position: relative;
-  top: -20px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  border-radius: 0 18px 18px 0;
-  background-color: #99e2d0;
-  margin-right: -205px;
-  transform-origin: right;
-  transition: all 500ms;
-  z-index: 50; }
-
-.band__anim__check {
-  height: 90px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  border-radius: 0 18px 18px 0;
-  background-color: #99e2d0;
-  transition: all 500ms; }
-
-.container__btn:hover > .btn__food > .container__band__anim {
-  margin-right: 0; }
-
-.container__btn:hover > .btn__food > .container__band__anim > .band__anim > .band__anim__check {
-  transform: rotate(1turn); }
-
-.container__btn > .btn__food:hover > .price__anim {
-  transform: translate(0, 0); }
 
 nav > div > h1 {
   font-family: "Shrikhand", Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
@@ -505,7 +499,11 @@ footer {
   color: white;
   padding: 20px 0; }
 
-ul {
+main > div > nav > ul {
+  display: flex;
+  flex-flow: column nowrap; }
+
+footer > nav > ul {
   display: flex;
   flex-flow: column nowrap; }
 
