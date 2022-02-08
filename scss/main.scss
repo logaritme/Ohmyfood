@@ -554,9 +554,7 @@ figure {
     .fas.fa-heart {
       width: $icone-width-large;
       height: 50px;
-      display: flex;
-      align-self: center;
-      justify-content: center;
+      @include flex-as-jc-center;
       line-height: 2;
       font-weight: $icone-weight;
       color: $color-primary;
@@ -567,9 +565,7 @@ figure {
     .far.fa-heart {
       width: $icone-width-large;
       height: 50px;
-      display: flex;
-      align-self: center;
-      justify-content: center;
+      @include flex-as-jc-center;
       font-weight: $icone-weight;
       color: $color-primary;
       background-color: $color-white;

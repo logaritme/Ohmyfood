@@ -298,38 +298,14 @@ nav {
   position: relative;
   top: 0;
   left: 0;
-  margin-left: 50px;
+  margin: 0 5%;
   cursor: pointer; }
-
-.far.fa-heart {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  color: black;
-  background-color: transparent;
-  font-size: 3rem; }
-
-.fas.fa-heart {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  position: relative;
-  top: -28px;
-  /* or ?% */
-  left: 0;
-  color: #9356dc;
-  background-color: transparent;
-  font-size: 2.5rem;
-  transform-origin: bottom;
-  transform: scale(0);
-  transition: all 400ms; }
 
 .icone__h--empty {
   display: flex;
   align-self: center;
   justify-content: center;
   color: black;
-  background-color: transparent;
   font-size: 3rem; }
 
 .icone__h--full {
@@ -339,9 +315,7 @@ nav {
   position: relative;
   top: -28px;
   /* or ?% */
-  left: 0;
   color: #9356dc;
-  background-color: transparent;
   font-size: 2.5rem;
   transform-origin: bottom;
   transform: scale(0);

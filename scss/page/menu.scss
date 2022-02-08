@@ -78,34 +78,13 @@ nav {
   position: relative;
   top: 0;
   left: 0;
-  margin-left: 50px;
+  margin: 0 5%;
   cursor: pointer;
-}
-
-.far.fa-heart {
-  @include flex-as-jc-center;
-  color: $color-black;
-  background-color: transparent;
-  font-size: 3rem;
-}
-
-.fas.fa-heart {
-  @include flex-as-jc-center;
-  position: relative;
-  top: -28px; /* or ?% */
-  left: 0;
-  color: $color-primary;
-  background-color: transparent;
-  font-size: $font-size-primary;
-  transform-origin: bottom;
-  transform: scale(0);
-  transition: all 400ms;
 }
 
 .icone__h--empty {
   @include flex-as-jc-center;
   color: $color-black;
-  background-color: transparent;
   font-size: 3rem;
 }
 
@@ -113,9 +92,7 @@ nav {
   @include flex-as-jc-center;
   position: relative;
   top: -28px; /* or ?% */
-  left: 0;
   color: $color-primary;
-  background-color: transparent;
   font-size: $font-size-primary;
   transform-origin: bottom;
   transform: scale(0);
