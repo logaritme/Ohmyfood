@@ -30,7 +30,7 @@ body {
 .palette {
   position:relative;
   top: -53px;
-  border-radius: 50px;
+  border-radius: $padding-bigger;
   background-color: $lightest-grey;
   // z-index: 10;
 }
@@ -60,7 +60,7 @@ nav {
 
 .header {
   height: 80px;
-  padding: 25px 0 10px 0;
+  padding: 25px 0 $padding-small 0;
 }
 
 // 1.2 TITLE LAYOUT
@@ -68,21 +68,64 @@ nav {
 .layout__text-heart {
   min-width: 240px;
   max-width: 380px;
-  display: flex;
-  justify-content: center;
-  padding: 50px 0 30px 0;
+  @include flex-jc-center;
+  padding: $padding-bigger 0 $padding-higher 0;
+}
+
+.icones__heart {
+  width: $font-size-inter-sec-ter;
+  height: $font-size-inter-sec-ter;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 50px;
+  cursor: pointer;
 }
 
 .far.fa-heart {
-  width: $icone-width-large;
-  height: 50px;
-  display: flex;
-  align-self: center;
-  justify-content: center;
+  @include flex-as-jc-center;
   color: $color-black;
-  background-color: $lightest-grey;
-  font-size: $font-size-x;
-  padding-left: 140%;
+  background-color: transparent;
+  font-size: 3rem;
+}
+
+.fas.fa-heart {
+  @include flex-as-jc-center;
+  position: relative;
+  top: -28px; /* or ?% */
+  left: 0;
+  color: $color-primary;
+  background-color: transparent;
+  font-size: $font-size-primary;
+  transform-origin: bottom;
+  transform: scale(0);
+  transition: all 400ms;
+}
+
+.icone__h--empty {
+  @include flex-as-jc-center;
+  color: $color-black;
+  background-color: transparent;
+  font-size: 3rem;
+}
+
+.icone__h--full {
+  @include flex-as-jc-center;
+  position: relative;
+  top: -28px; /* or ?% */
+  left: 0;
+  color: $color-primary;
+  background-color: transparent;
+  font-size: $font-size-primary;
+  transform-origin: bottom;
+  transform: scale(0);
+  transition: all 400ms;
+}
+
+// HOVER HEART (FILL)
+
+.icones__heart:hover > .fas.fa-heart {
+  transform: scale(1);
 }
 
 // 1.3 BETWEEN ENTREES AND PLATS, AND PLATS AND DESSERTS
@@ -102,13 +145,12 @@ nav {
   }
 
 .fas.fa-arrow-left {
-  width: 50px;
-  height: 50px;
+  width: $padding-bigger;
+  height: $padding-bigger;
   position: absolute;
-  left: 10px;
-  top: 30px;
-  display: flex;
-  justify-content: center;
+  left: $padding-small;
+  top: $padding-higher;
+  @include flex-jc-center;
   font-weight: $icone-weight;
   color: $color-dark;
   font-size: $font-size-secondary;
@@ -116,9 +158,8 @@ nav {
 
 .header__logo {
   width: auto;
-  height: 50px;
-  display: flex;
-  justify-content: center;
+  height: $padding-bigger;
+  @include flex-jc-center;
 }
 
 .logo__big {
@@ -129,7 +170,7 @@ nav {
 
 .cont__img-pages {
   width: 100%;
-  height: 300px;
+  height: $padding-higher *10;
 }
 
 .img-pages {
@@ -156,7 +197,7 @@ nav {
 }
 
 .btn__food {
-    width: 80%; // use 93.5% or px or auto for j-c:strecth
+    width: 100%; // use 93.5% or px or auto for j-c:strecth
     height: $card-height;
     display: flex;
     flex-flow: row nowrap;
@@ -165,7 +206,7 @@ nav {
     border-radius: 18px;
     margin: 0;
     border-color: transparent;
-    box-shadow: 0px 6px 10px $light-grey;
+    box-shadow: 0px 6px $padding-small $light-grey;
     background-color: $color-white;
     cursor: pointer;
     overflow: hidden;
@@ -178,7 +219,6 @@ nav {
   color: $color-white;
   background-color: $color-tertiary;
   border-radius: 0 18px 18px 0;
-
 }
 
 // .btn__food HAS ONLY ONE CHILD WHO IS .btn__food__text
@@ -191,7 +231,7 @@ nav {
   flex-flow: column nowrap;
   justify-content: center;
   padding-left: 3%;
-  gap: 10px;
+  gap: $padding-small;
   overflow: hidden;
 }
 
@@ -210,7 +250,7 @@ nav {
   align-items: flex-end;
   padding-bottom: 15px;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: $weight-bold;
   padding-top: 35px;
 }
 
@@ -221,25 +261,24 @@ nav {
   height: $card-height;
   position: relative;
   top: -20px;
-  display: flex;
-  justify-content: center;
+  @include flex-jc-center;
   position: relative;
   border-radius: 0 18px 18px 0;
   background-color: $color-tertiary;
+  overflow: hidden;
   margin-right: -20%;
   transform-origin: right;
-  transition: all 500ms;
+  transition: all 500ms ease-in-out;
 }
 
 .band__anim__check {
   height: $card-height;
   position: relative;
-  display: flex;
-  justify-content: center;
+  @include flex-jc-center;
   border-radius: 0 18px 18px 0;
   background-color: $color-tertiary;
   transform: rotate(0turn);
-  transition: all 500ms;
+  transition: all 500ms ease-in-out;
 }
 
 // 3.2 HOVER CARDS
@@ -260,7 +299,7 @@ nav {
 
 .btn__first {
   width: 50%;
-  min-width: 150px;
+  min-width: $padding-bigger *3;
   height: 65px;
   display: flex;
   align-content: center;
@@ -268,9 +307,9 @@ nav {
   padding: $padding-gap-normal 0;
   border: none;
   border-radius: 38px;
-  margin: 50px auto 20px auto;
+  margin: $padding-bigger auto 20px auto;
   border-color: transparent;
-  box-shadow: 0px 6px 10px $light-grey;
+  box-shadow: 0px 6px $padding-small $light-grey;
   background: linear-gradient(175deg, $color-secondary, $color-primary ),
               linear-gradient(-5deg, $color-secondary, $color-primary);
   cursor: pointer;
@@ -280,7 +319,7 @@ nav {
   color: $color-white;
   padding: 0 3%;
   font-size: 2.1rem;
-  font-weight: 400;
+  font-weight: $weight-thin;
 }
 
 // 5.0 TYPO
@@ -288,41 +327,37 @@ nav {
 // TYPO h1 TO h4
 
 nav > div > h1 {
+  margin-left: 2%;
   font-family: "Shrikhand", Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
-  font-size: 3.2rem;
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: $weight-normal;
 }
 
 nav > ul > h2 {
-  width: 50px;
-  height: 30px;
-  font-size: 2rem;
-  font-weight: 400;
-  padding-bottom: 30px;
-  border-bottom: 4px solid $color-tertiary;
-  width: 50px;
+  width: $padding-bigger;
+  height: $padding-higher;
   margin-left: 4%;
+  padding-bottom: $padding-higher;
+  border-bottom: 4px solid $color-tertiary;
+  font-size: 2rem;
+  font-weight: $weight-thin;
 }
 
 li > div > h3 {
   width: 100%;
   height: 22px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 2.2rem;
-  font-weight: 700;
+  @include ellipsis-module;
+  font-size: $font-size-secondary;
+  font-weight: $weight-bold;
 }
 
 li > div > h4 {
   // width: clamp (200px, 52vw, 1440px);
   width: 100%;
   height: 18px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 1.8rem;
-  font-weight: 400;
+  @include ellipsis-module;
+  font-size: $font-size-tertiary;
+  font-weight: $weight-thin;
 }
 
 // 6.0 FOOTER
@@ -334,10 +369,10 @@ footer {
 }
 
 .text-transf {
+  padding: $padding-gap-normal 0;
   font-family: $font-family-secondary;
   font-size: $font-size-tertiary;
   color: $color-white;
-  padding: 20px 0;
 }
 
 main > div > nav > ul {
@@ -361,31 +396,31 @@ footer > nav > ul {
 
 .fas.fa-utensils {
   width: $icone-width-small;
-  height: 20px;
+  height: $padding-gap-normal;
   display: flex;
   align-self: center;
   justify-content: center;
   font-weight: $icone-weight;
-  color: $color-white;
-  background-color: $color-dark;
   font-size: $font-size-quaternary;
+  background-color: $color-dark;
+  color: $color-white;
 }
 
 .fas.fa-hands-helping {
   width: $icone-width-small;
-  height: 20px;
+  height: $padding-gap-normal;
   display: flex;
   align-self: center;
   justify-content: center;
-  font-weight: $icone-weight;
-  color: $color-white;
-  background-color: $color-dark;
   font-size: $font-size-quaternary;
+  font-weight: $icone-weight;
+  background-color: $color-dark;
+  color: $color-white;
 }
 
 .footer__text--color {
-  color: $color-white;
   font-size: $font-size-quaternary;
+  color: $color-white;
 }
 
 .text--length {

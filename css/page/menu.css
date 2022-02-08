@@ -292,16 +292,63 @@ nav {
   justify-content: center;
   padding: 50px 0 30px 0; }
 
+.icones__heart {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 50px;
+  cursor: pointer; }
+
 .far.fa-heart {
-  width: 50px;
-  height: 50px;
   display: flex;
   align-self: center;
   justify-content: center;
   color: black;
-  background-color: #eeeeee;
-  font-size: 2.8rem;
-  padding-left: 140%; }
+  background-color: transparent;
+  font-size: 3rem; }
+
+.fas.fa-heart {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  top: -28px;
+  /* or ?% */
+  left: 0;
+  color: #9356dc;
+  background-color: transparent;
+  font-size: 2.5rem;
+  transform-origin: bottom;
+  transform: scale(0);
+  transition: all 400ms; }
+
+.icone__h--empty {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  color: black;
+  background-color: transparent;
+  font-size: 3rem; }
+
+.icone__h--full {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  top: -28px;
+  /* or ?% */
+  left: 0;
+  color: #9356dc;
+  background-color: transparent;
+  font-size: 2.5rem;
+  transform-origin: bottom;
+  transform: scale(0);
+  transition: all 400ms; }
+
+.icones__heart:hover > .fas.fa-heart {
+  transform: scale(1); }
 
 .inter-meal {
   padding-top: 45px; }
@@ -357,7 +404,7 @@ nav {
   flex-flow: row nowrap; }
 
 .btn__food {
-  width: 80%;
+  width: 100%;
   height: 90px;
   display: flex;
   flex-flow: row nowrap;
@@ -413,9 +460,10 @@ nav {
   position: relative;
   border-radius: 0 18px 18px 0;
   background-color: #99e2d0;
+  overflow: hidden;
   margin-right: -20%;
   transform-origin: right;
-  transition: all 500ms; }
+  transition: all 500ms ease-in-out; }
 
 .band__anim__check {
   height: 90px;
@@ -425,7 +473,7 @@ nav {
   border-radius: 0 18px 18px 0;
   background-color: #99e2d0;
   transform: rotate(0turn);
-  transition: all 500ms; }
+  transition: all 500ms ease-in-out; }
 
 .container__btn:hover > .btn__food > .container__band__anim {
   margin-right: 0; }
@@ -456,19 +504,19 @@ nav {
   font-weight: 400; }
 
 nav > div > h1 {
+  margin-left: 2%;
   font-family: "Shrikhand", Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 500; }
 
 nav > ul > h2 {
   width: 50px;
   height: 30px;
-  font-size: 2rem;
-  font-weight: 400;
+  margin-left: 4%;
   padding-bottom: 30px;
   border-bottom: 4px solid #99e2d0;
-  width: 50px;
-  margin-left: 4%; }
+  font-size: 2rem;
+  font-weight: 400; }
 
 li > div > h3 {
   width: 100%;
@@ -494,10 +542,10 @@ footer {
   background: #404040; }
 
 .text-transf {
+  padding: 20px 0;
   font-family: "Shrikhand", serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
   font-size: 1.8rem;
-  color: white;
-  padding: 20px 0; }
+  color: white; }
 
 main > div > nav > ul {
   display: flex;
@@ -521,9 +569,9 @@ footer > nav > ul {
   align-self: center;
   justify-content: center;
   font-weight: 900;
-  color: white;
+  font-size: 1.6rem;
   background-color: #404040;
-  font-size: 1.6rem; }
+  color: white; }
 
 .fas.fa-hands-helping {
   width: 20px;
@@ -531,14 +579,14 @@ footer > nav > ul {
   display: flex;
   align-self: center;
   justify-content: center;
+  font-size: 1.6rem;
   font-weight: 900;
-  color: white;
   background-color: #404040;
-  font-size: 1.6rem; }
+  color: white; }
 
 .footer__text--color {
-  color: white;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  color: white; }
 
 .text--length {
   padding-left: 10px;

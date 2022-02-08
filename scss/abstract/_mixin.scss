@@ -7,3 +7,20 @@
 @import './reset';
 
 // Mixins
+
+@mixin flex-jc-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-as-jc-center {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+@mixin ellipsis-module {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
