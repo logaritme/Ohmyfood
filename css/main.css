@@ -511,6 +511,39 @@ body {
   width: 15%;
   display: block; }
 
+.icones__heart {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 5%;
+  cursor: pointer; }
+
+.icone__h--empty {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  color: black;
+  font-size: 3rem; }
+
+.icone__h--full {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  top: -28px;
+  /* or ?% */
+  color: #9356dc;
+  transform-origin: bottom;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 400ms; }
+
+.icones__heart:hover > .fas.fa-heart {
+  opacity: 1;
+  transform: scale(1); }
+
 .logo__little {
   width: 28%;
   border-radius: 0;
@@ -653,27 +686,14 @@ figure {
   line-height: 1.3; }
 
 .fas.fa-heart {
-  width: 50px;
-  height: 50px;
   display: flex;
   align-self: center;
-  justify-content: center;
-  line-height: 2;
-  font-weight: 900;
-  color: #9356dc;
-  background-color: white;
-  font-size: 2.6rem; }
+  justify-content: center; }
 
 .far.fa-heart {
-  width: 50px;
-  height: 50px;
   display: flex;
   align-self: center;
-  justify-content: center;
-  font-weight: 900;
-  color: #9356dc;
-  background-color: white;
-  font-size: 2.5rem; }
+  justify-content: center; }
 
 /* 1.5 | FOOTER ICONES PROPERTIES */
 .fas.fa-utensils {
@@ -853,10 +873,6 @@ footer {
   .text__position__thin {
     font-size: 3rem; }
 
-  .fas.fa-heart {
-    line-height: 1;
-    font-size: 4.5rem; }
-
   footer {
     display: flex;
     flex-flow: column nowrap;
@@ -958,9 +974,6 @@ footer {
 
   .text__position__thin {
     font-size: 2.4rem; }
-
-  .fas.fa-heart {
-    font-size: 3rem; }
 
   footer {
     width: 100%; }

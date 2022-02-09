@@ -350,6 +350,40 @@ body {
   display: block;
 }
 
+.icones__heart {
+  width: $font-size-inter-sec-ter;
+  height: $font-size-inter-sec-ter;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 5%;
+  cursor: pointer;
+}
+
+.icone__h--empty {
+  @include flex-as-jc-center;
+  color: $color-black;
+  font-size: 3rem;
+}
+
+.icone__h--full {
+  @include flex-as-jc-center;
+  position: relative;
+  top: -28px; /* or ?% */
+  color: $color-primary;
+  transform-origin: bottom;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 400ms;
+}
+
+// HOVER HEART (FILL)
+
+.icones__heart:hover > .fas.fa-heart {
+  opacity: 1;
+  transform: scale(1);
+}
+
 // 2.2.1 | FOOTER
 
 // Img logo of footer
@@ -552,24 +586,11 @@ figure {
 
     // Solid heart
     .fas.fa-heart {
-      width: $icone-width-large;
-      height: 50px;
       @include flex-as-jc-center;
-      line-height: 2;
-      font-weight: $icone-weight;
-      color: $color-primary;
-      background-color: $color-white;
-      font-size: 2.6rem;
     }
     // Regular heart
     .far.fa-heart {
-      width: $icone-width-large;
-      height: 50px;
       @include flex-as-jc-center;
-      font-weight: $icone-weight;
-      color: $color-primary;
-      background-color: $color-white;
-      font-size: $font-size-primary;
     }
     
         /* 1.5 | FOOTER ICONES PROPERTIES */
@@ -849,11 +870,6 @@ figcaption {
   font-size: 3rem;
 }
 
-.fas.fa-heart {
-  line-height: 1;
-  font-size: 4.5rem;
-}
-
 // FOOTER TABLET
 
 footer {
@@ -990,12 +1006,6 @@ ul {
   .text__position__thin {
     font-size: $font-family-inter-prim-sec;
   }
-
-  .fas.fa-heart {
-    font-size: 3rem;
-  }
-
-
 
 // FOOTER DESKTOP
 
