@@ -758,6 +758,58 @@ figure {
   display: flex;
   flex-flow: row wrap; }
 
+.loading--animation {
+  width: 460px;
+  height: 797px;
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+  color: white;
+  text-align: center; }
+
+.load--ani--first {
+  width: 460px;
+  height: 797px;
+  display: flex;
+  justify-content: center;
+  background-color: #16a085; }
+
+.fas.fa-utensils.ut--loader {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  background-color: #16a085;
+  font-size: 200px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255, 0.4);
+  transform: rotate(5turn);
+  transition: all 2000ms;
+  animation: spinner 1500ms 500ms linear infinite; }
+
+.fas.fa-utensils.ut--loader::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  bottom: -8px;
+  right: -8px;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  opacity: 0.7;
+  transform: rotate(5turn);
+  transition: all 2000ms;
+  animation: spinner 1000ms 500ms linear infinite; }
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0turn); }
+  100% {
+    transform: rotate(1turn); } }
 .header__logo {
   display: flex;
   flex-flow: column nowrap;
