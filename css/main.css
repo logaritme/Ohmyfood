@@ -796,19 +796,19 @@ figure {
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: #16a085; }
+  background-color: #9356dc; }
 
 .fas.fa-utensils.ut--loader {
   display: flex;
   align-items: center;
   justify-items: center;
   color: white;
-  background-color: #16a085;
+  background-color: #9356dc;
   font-size: 200px;
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  border: 8px solid rgba(255, 255, 255, 0.4);
+  border: 8px solid #aaaaaa;
   transform: rotate(5turn);
   transition: all 2000ms;
   animation: spinner 1500ms 500ms linear infinite; }
