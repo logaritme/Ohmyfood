@@ -374,6 +374,7 @@ main > div > nav > ul {
 footer > nav > ul {
   display: flex;
   flex-flow: column nowrap;
+  padding-bottom: $padding-higher;
 }
 
 .nav__link {
@@ -450,7 +451,6 @@ footer > nav > ul {
 
 footer {
   width: 100%;
-  height: 200px;
 }
 
 .text-transf--bott {

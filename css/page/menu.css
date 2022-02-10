@@ -539,7 +539,8 @@ main > div > nav > ul {
 
 footer > nav > ul {
   display: flex;
-  flex-flow: column nowrap; }
+  flex-flow: column nowrap;
+  padding-bottom: 30px; }
 
 .nav__link {
   padding: 5px 0; }
@@ -595,8 +596,7 @@ footer > nav > ul {
     align-items: center; } }
 @media screen and (min-width: 992px) {
   footer {
-    width: 100%;
-    height: 200px; }
+    width: 100%; }
 
   .text-transf--bott {
     font-size: 3.2rem; }
