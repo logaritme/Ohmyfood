@@ -180,6 +180,7 @@ body {
 /* 1 COVER THE BODY */
 
 .body--cover {
+  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -378,7 +379,7 @@ body {
   }
 }
 
-.icone__position {
+.icone__position__h {
   width: 15%;
   display: block;
 }
@@ -410,9 +411,9 @@ body {
   transition: all 400ms;
 }
 
-// HOVER HEART (FILL)
+// HEART ON CLICK (FILL)
 
-.icones__heart:hover > .fas.fa-heart {
+.icones__heart:active > .fas.fa-heart {
   opacity: 1;
   transform: scale(1);
 }
@@ -667,12 +668,12 @@ figure {
 
 /* CONTAINERS */
 
-.cont__big__block {
+.container__big__block {
   display: flex;
   flex-flow: column nowrap;
 }
 
-.cont__card__sticker {
+.container__card__sticker {
   display: flex;
   flex-flow: column nowrap;
 }
@@ -819,8 +820,8 @@ main {
 }
     
 // MARGINS MAIN
-    
-.cont {
+
+.container {
   // width: 100%;
   height: auto;
   padding: 0 5% 60px 5%;
@@ -828,7 +829,7 @@ main {
 
 // MAIN : TITLE
 
-.cont__title {
+.container__title {
   padding: $padding-higher 0;
   color: $color-black;
   font-size: 2.6rem;
@@ -837,7 +838,7 @@ main {
 
 // Layout between card blocks and between cards
 
-.cont__card__free {
+.container__card__free {
   display: flex;
   flex-flow: column nowrap;
   gap: $padding-higher;
@@ -1052,22 +1053,22 @@ ul {
     background-color: $color-white;
   }
 
-  .cont {
+.container {
     display: flex;
     flex-flow: column nowrap;
     width: 66.66%;
     padding: 35px 25px 0 25px;
   }
 
-  .cont__title {
+  .container__title {
     align-self: center;
   }
 
-  .cont__big__block {
+  .container__big__block {
     padding-bottom: 25px;
   }
 
-  .cont__card__sticker {
+  .container__card__sticker {
     display: flex;
     flex-flow: row nowrap;
     gap: 25px;
@@ -1082,7 +1083,7 @@ ul {
     bottom: 380px;
   }
 
-  .cont__card__free {
+  .container__card__free {
     display: flex;
     flex-flow: row nowrap;
   }
@@ -1111,4 +1112,14 @@ ul {
     gap: 175px;
     padding-right: 75px;
   }
+
+// ANIMATIONS TABLET
+
+// FILL HEARTS ON HOVER (FILL)
+
+.icones__heart:hover > .fas.fa-heart {
+  opacity: 1;
+  transform: scale(1);
+}
+
 }
