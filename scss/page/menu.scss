@@ -14,15 +14,17 @@
 }
 
 body {
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: "Roboto", Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
   display: flex;
   flex-flow: column nowrap;
-  background-color: $lightest-grey;
 }
 
-.cont__palette {
+.container__palette {
   width: 100%;
   height: auto;
+  background-color: $lightest-grey;
   display: flex;
   flex-flow: column nowrap;
 }
@@ -114,8 +116,8 @@ nav {
 }
 
 // 2.0 PICTURE
-
-.cont__logo-picture {
+// Pb here
+.container__logo-picture {
   width: auto;
   height: 380px;
   display: flex;
@@ -126,9 +128,8 @@ nav {
 .fas.fa-arrow-left {
   width: $padding-bigger;
   height: $padding-bigger;
-  position: absolute;
+  position: relative;
   left: $padding-small;
-  top: $padding-higher;
   @include flex-jc-center;
   font-weight: $icone-weight;
   color: $color-dark;
@@ -136,8 +137,10 @@ nav {
 }
 
 .header__logo {
+  position: relative;
+  top: -60px;
   width: auto;
-  height: $padding-bigger;
+  height: $padding-bigger + $padding-gap-normal;
   @include flex-jc-center;
 }
 
@@ -147,7 +150,7 @@ nav {
   border-radius: 0;
 }
 
-.cont__img-pages {
+.container__img-pages {
   width: 100%;
   height: $padding-higher *10;
 }
@@ -333,7 +336,7 @@ li > div > h3 {
 li > div > h4 {
   // width: clamp (200px, 52vw, 1440px);
   width: 100%;
-  height: 18px;
+  height: 19px;
   @include ellipsis-module;
   font-size: $font-size-tertiary;
   font-weight: $weight-thin;
