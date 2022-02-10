@@ -251,11 +251,10 @@ html {
 body {
   max-width: 1440px;
   height: auto;
+  margin: 0 auto;
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
-  line-height: 1;
-  background: white; }
+  line-height: 1; }
 
 * {
   box-sizing: border-box;
@@ -577,7 +576,7 @@ body {
   -webkit-filter: invert(100%);
   filter: invert(100%); }
 
-.text-transf {
+.text-transf--bott {
   font-family: "Shrikhand", serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
   font-size: 1.8rem;
   color: white;
@@ -955,7 +954,7 @@ footer {
     flex-flow: column nowrap;
     align-items: center; }
 
-  .text-transf {
+  .text-transf--bott {
     display: flex;
     justify-content: center;
     font-size: 2.8rem; }
@@ -1054,6 +1053,9 @@ footer {
 
   footer {
     width: 100%; }
+
+  .text-transf--bott {
+    font-size: 3.2rem; }
 
   ul {
     display: flex;

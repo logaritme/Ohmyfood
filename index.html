@@ -27,14 +27,17 @@
     <link href="./css/main.css" rel="stylesheet" type="text/css">
 
 </head>
+
 <body class="flex__body">
-    <!-- <div class="body--cover">
+    <!-- LOADER SPINNER MODULE -->
+    <div class="body--cover">
         <section class="loading--animation">
             <div class="load--anim--first">
                 <span class="fas fa-utensils ut--loader"></span>
             </div>
         </section>
-    </div> -->
+    </div>
+    <!-- HEADING BEFORE CARDS -->
     <header class="flex__header">
         <div>
             <div class="header">
@@ -89,11 +92,13 @@
         </div>
     </header>
 
-    <!-- Title + Cards -->
+    <!-- CONTAINS TITLE AND ALL CARDS -->
     <main class="container">
         <h2 class="container__title">Restaurants</h2>
         <div class="container__big__block">
+            <!-- CONTAINS TWO CARDS WITH ACTIVE STICKER -->
             <div class="container__card__sticker">
+                <!-- FIRST CARD -->
                 <section class="card__sticker">
                     <a class="card__anim" href="./html/palette.html">
                         <figure>
@@ -101,6 +106,7 @@
                                 <img class="img__index" src="./images/restaurants/palette.jpg"
                                     alt="Petite portion de repas dans l'assiette: Saumon cuit, pomme de terre grillée et légumes verts">
                             </div>
+                            <!-- TEXT AND HEART -->
                             <figcaption class="flex-r-nw layout">
                                 <div class="text__position">
                                     <h3 class="text__position__bold">La palette du goût</h3>
@@ -115,9 +121,11 @@
                                 </div>
                             </figcaption>
                         </figure>
+                        <!-- ACTIVE STICKER -->
                         <div class="card__sticker__over" id="display-first">Nouveau</div>
                     </a>
                 </section>
+                <!-- SECOND CARD -->
                 <section class="card__sticker">
                     <a class="card__anim" href="./html/enchantee.html">
                         <figure>
@@ -125,7 +133,7 @@
                                 <img class="img__index" src="./images/restaurants/enchantee.jpg"
                                     alt="Repas dans l'assiette: olives, boulettes et viande avec sauce tomate">
                             </div>
-
+                            <!-- TEXT AND HEART -->
                             <figcaption class="flex-r-nw layout">
                                 <div class="text__position">
                                     <h3 class="text__position__bold">La note enchantée</h3>
@@ -140,11 +148,14 @@
                                 </div>
                             </figcaption>
                         </figure>
+                        <!-- ACTIVE STICKER -->
                         <div class="card__sticker__over" id="display-second">Nouveau</div>
                     </a>
                 </section>
             </div>
+            <!-- CONTAINS TWO CARDS WITH INACTIVE STICKER -->
             <div class="container__card__free">
+                <!-- THIRD CARD -->
                 <section class="card__free">
                     <a class="card__anim" href="./html/francaise.html">
                         <figure>
@@ -152,7 +163,7 @@
                                 <img class="img__index" src="./images/restaurants/francaise.jpg"
                                     alt="Dans l'assiette: un toast aux légumes verts surmontés de deux boules crémeuses blanches">
                             </div>
-
+                            <!-- TEXT AND HEART -->
                             <figcaption class="flex-r-nw layout">
                                 <div class="text__position">
                                     <h3 class="text__position__bold">À la française</h3>
@@ -167,9 +178,11 @@
                                 </div>
                             </figcaption>
                         </figure>
+                        <!-- INACTIVE STICKER -->
                         <div class="card__sticker__over" id="display-third">Nouveau</div>
                     </a>
                 </section>
+                <!-- FORTH CARD -->
                 <section class="card__free">
                     <a class="card__anim" href="./html/delice.html">
                         <figure>
@@ -177,7 +190,6 @@
                                 <img class="img__index" src="./images/restaurants/delice.jpg"
                                     alt="Dans une assiette rectangulaire: poisson blanc cuit, surmonté d'un poivron rouges et agrémenté de quelques dés de courgette en sauce">
                             </div>
-
                             <figcaption class="flex-r-nw layout">
                                 <div class="text__position">
                                     <h3 class="text__position__bold">Le délice des sens</h3>
@@ -192,6 +204,7 @@
                                 </div>
                             </figcaption>
                         </figure>
+                        <!-- INACTIVE STICKER -->
                         <div class="card__sticker__over" id="display-forth">Nouveau</div>
                     </a>
                 </section>
@@ -201,19 +214,23 @@
 
     <footer>
         <nav class="nav flex-c-nw">
-            <p class="text-transf">ohmyfood</p>
-            <picture class="nav__header__logo">
+            <p class="text-transf--bott">ohmyfood</p>
+            <!-- <picture class="nav__header__logo">
                 <img class="logo__little" src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
-            </picture>
+            </picture> -->
             <ul>
+                <!-- TWO ICONES WITH TEXT LINES -->
                 <li class="nav__link"> <a class="flex-r-nw" href="#">
                         <span class="fas fa-utensils"></span>
                         <p class="footer__text--color text--length">Proposer un restaurant</p>
-                    </a> </li>
+                    </a>
+                </li>
                 <li class="nav__link"> <a class="flex-r-nw" href="#">
                         <span class="fas fa-hands-helping"></span>
                         <p class="footer__text--color text--length">Devenir partenaire</p>
-                    </a> </li>
+                    </a>
+                </li>
+                <!-- TWO TEXT LINES WITHOUT ICONES-->
                 <li class="nav__link"> <a class="footer__text--color" href="#">Mentions légales</a> </li>
                 <li class="nav__link"> <a class="footer__text--color" href="#">Contact</a></li>
             </ul>

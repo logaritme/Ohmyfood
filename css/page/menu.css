@@ -284,7 +284,7 @@ nav {
   flex-flow: column nowrap; }
 
 .header {
-  height: 80px;
+  height: 75px;
   padding: 25px 0 10px 0; }
 
 .layout__text-heart {
@@ -347,7 +347,9 @@ nav {
   justify-content: center;
   font-weight: 900;
   color: #404040;
-  font-size: 2.2rem; }
+  font-size: 2.2rem;
+  cursor: pointer;
+  z-index: 5; }
 
 .header__logo {
   position: relative;
@@ -356,6 +358,11 @@ nav {
   height: 70px;
   display: flex;
   justify-content: center; }
+
+.text-transf--top {
+  font-family: "Shrikhand", serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
+  font-size: 3.2rem;
+  color: black; }
 
 .logo__big {
   width: 46%;
@@ -520,7 +527,7 @@ footer {
   padding-left: 5%;
   background: #404040; }
 
-.text-transf {
+.text-transf--bott {
   padding: 20px 0;
   font-family: "Shrikhand", serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
   font-size: 1.8rem;
@@ -570,5 +577,35 @@ footer > nav > ul {
 .text--length {
   padding-left: 10px;
   font-size: 1.6rem; }
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+
+  .text-transf--bott {
+    display: flex;
+    justify-content: center;
+    font-size: 2.8rem; }
+
+  footer > nav > ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; } }
+@media screen and (min-width: 992px) {
+  footer {
+    width: 100%;
+    height: 200px; }
+
+  .text-transf--bott {
+    font-size: 3.2rem; }
+
+  footer > nav > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 175px;
+    padding-right: 75px;
+    padding-bottom: 40px; } }
 
 /*# sourceMappingURL=menu.css.map */

@@ -61,7 +61,7 @@ nav {
 // 1.? LOGO LAYOUT
 
 .header {
-  height: 80px;
+  height: 75px;
   padding: 25px 0 $padding-small 0;
 }
 
@@ -134,6 +134,8 @@ nav {
   font-weight: $icone-weight;
   color: $color-dark;
   font-size: $font-size-secondary;
+  cursor: pointer;
+  z-index: 5;
 }
 
 .header__logo {
@@ -142,6 +144,13 @@ nav {
   width: auto;
   height: $padding-bigger + $padding-gap-normal;
   @include flex-jc-center;
+}
+
+.text-transf--top {
+  // padding: $padding-gap-normal 0;
+  font-family: $font-family-secondary;
+  font-size: $font-size-xl;
+  color: $color-black;
 }
 
 .logo__big {
@@ -350,7 +359,7 @@ footer {
   background: $color-dark;
 }
 
-.text-transf {
+.text-transf--bott {
   padding: $padding-gap-normal 0;
   font-family: $font-family-secondary;
   font-size: $font-size-tertiary;
@@ -408,4 +417,52 @@ footer > nav > ul {
 .text--length {
   padding-left: $padding-small;
   font-size: $font-size-quaternary;
+}
+
+
+@media screen and (min-width: 768px) {
+
+// FOOTER TABLET
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.text-transf--bott {
+  display: flex;
+  justify-content: center;
+  font-size: $font-size-x;
+}
+
+footer > nav > ul {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+}
+
+@media screen and (min-width: 992px) {
+
+// FOOTER DESKTOP
+
+footer {
+  width: 100%;
+  height: 200px;
+}
+
+.text-transf--bott {
+  font-size: $font-size-xl;
+}
+
+footer > nav > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 175px;
+  padding-right: 75px;
+  padding-bottom: 40px;
+}
+
 }
