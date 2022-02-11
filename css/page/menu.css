@@ -580,6 +580,9 @@ footer > nav > ul {
   font-size: 1.6rem; }
 
 @media screen and (min-width: 768px) {
+  .layout__text-heart {
+    max-width: 2560px; }
+
   footer {
     display: flex;
     flex-flow: column nowrap;

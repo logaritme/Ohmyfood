@@ -178,7 +178,7 @@ body {
 /* 1 COVER THE BODY */
 
 .body--cover {
-  display: none;
+  display: flex;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -187,12 +187,14 @@ body {
   background-color: $color-white;
   z-index: 100;
   opacity: 1;
-  animation: uncover 3s forwards; /* cubic-bezier? */
+  animation: uncover 4000ms 500ms forwards; /* cubic-bezier? */
+  // animation: disappear 1000ms;
 }
 
 @keyframes uncover {
   0% {
     opacity: 1;
+    transform: scale(1, 1);
   }
   65% {
     opacity: 1;
@@ -203,11 +205,15 @@ body {
   80% {
     opacity: 0.3;
   }
+  99% {
+    opacity: 0;
+    transform: scale(1, 1);
+  }
   100% {
     opacity: 0;
+    transform: scale(0, 0);
   }
 }
-
 
 /* 2 HEADING */
 
@@ -344,6 +350,19 @@ body {
   align-items: center;
   color: $color-black;
   background-color: $lightest-grey;
+  margin: $padding-small;
+  font-size: 1.9rem;
+}
+
+.functioning__btn__txt--lighten {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  color: $color-black;
+  background-color: transparent;
   margin: $padding-small;
   font-size: 1.9rem;
 }
@@ -891,6 +910,7 @@ footer {
 
 @media screen and (min-width: 768px) {
 //  768px to 992px
+
   // Img logo of footer
 
   // Element replaced
@@ -1003,6 +1023,7 @@ ul {
 }
 
 @media screen and (min-width: 992px) {
+// 992px and over
 
   .flex__body {
     display: flex;
