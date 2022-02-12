@@ -459,6 +459,7 @@ body {
   background: linear-gradient(175deg, #ff79da, #9356dc), linear-gradient(-5deg, #ff79da, #9356dc); }
 
 .btn__explo--color {
+  display: inline-block;
   color: white;
   padding: 0 3%;
   font-size: 2.1rem;
