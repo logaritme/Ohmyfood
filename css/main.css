@@ -761,6 +761,7 @@ figure {
   font-size: 1.6rem; }
 
 /* 1.2 | ANIMATIONS */
+/* ANIMATION HOVER CARD => CARD GROW */
 .card__anim {
   transition: transform ease-in-out 0.3s; }
 

@@ -155,7 +155,7 @@ nav {
 
 .logo__big {
   width: 46%;
-  height: 70%;
+  height: 50px;
   border-radius: 0;
 }
 
@@ -325,7 +325,7 @@ nav > div > h1 {
   font-weight: $weight-normal;
 }
 
-nav > ul > h2 {
+nav > section > h2 {
   width: $padding-bigger;
   height: $padding-higher;
   margin-left: 4%;
@@ -335,7 +335,7 @@ nav > ul > h2 {
   font-weight: $weight-thin;
 }
 
-li > div > h3 {
+section > div > div > div > h3 {
   width: 100%;
   height: 22px;
   @include ellipsis-module;
@@ -343,8 +343,7 @@ li > div > h3 {
   font-weight: $weight-bold;
 }
 
-li > div > h4 {
-  // width: clamp (200px, 52vw, 1440px);
+section > div > div > div > h4 {
   width: 100%;
   height: 19px;
   @include ellipsis-module;
@@ -367,7 +366,7 @@ footer {
   color: $color-white;
 }
 
-main > div > nav > ul {
+main > div > nav > section {
   display: flex;
   flex-flow: column nowrap;
 }
@@ -454,6 +453,40 @@ footer > nav > ul {
 }
 
 @media screen and (min-width: 992px) {
+
+// DESKTOP
+
+/* LOGO OF HEADER */
+
+.logo__big {
+  max-width: 400px;
+}
+
+// MAIN DESKTOP
+
+/* TITLE + HEART */
+
+.icones__heart {
+  margin: 0 20px;
+}
+
+/* BLOCK UNDER THE TITLE */
+
+.group__direction {
+  align-items: center;
+}
+
+/* SUB-TITLES */
+
+nav > section > h2 {
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container__btn {
+  width: 65%;
+}
 
 // FOOTER DESKTOP
 

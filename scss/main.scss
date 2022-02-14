@@ -675,9 +675,12 @@ figure {
  
     /* 1.2 | ANIMATIONS */
 
+   /* ANIMATION HOVER CARD => CARD GROW */
+   
     .card__anim {
       transition: transform ease-in-out 0.3s;
     }
+
     .card__anim:hover {
       transform: scale(1.05);
     }
