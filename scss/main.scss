@@ -289,6 +289,15 @@ body {
               linear-gradient(-5deg, $color-secondary, $color-primary);
 }
 
+/* BUTTON ANIMATION */
+
+.btn__first:hover {
+  opacity: 0.85;
+  box-shadow: 0px 6px $padding-small $darkest-grey;
+}
+
+/* TEXT INSIDE THE BUTTON */
+
 .btn__explo--color {
   display: inline-block;
   color: $color-white;

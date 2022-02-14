@@ -412,6 +412,22 @@ nav {
   background-color: #99e2d0;
   border-radius: 0 18px 18px 0; }
 
+.appear--first {
+  animation: apparition 900ms linear 300ms; }
+
+.appear--second {
+  animation: apparition 900ms linear 600ms; }
+
+.appear--third {
+  animation: apparition 900ms linear 900ms; }
+
+@keyframes apparition {
+  0% {
+    transform: translateY(3vh);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
 .btn__food__text {
   width: 80%;
   display: flex;
@@ -483,6 +499,12 @@ nav {
   background: linear-gradient(175deg, #ff79da, #9356dc), linear-gradient(-5deg, #ff79da, #9356dc);
   cursor: pointer; }
 
+/* BUTTON ANIMATION */
+.btn__first:hover {
+  opacity: 0.85;
+  box-shadow: 0px 6px 10px #aaaaaa; }
+
+/* TEXT INSIDE THE BUTTON */
 .btn__explo--color {
   display: inline-block;
   color: white;
