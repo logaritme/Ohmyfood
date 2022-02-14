@@ -581,7 +581,6 @@ body {
   justify-content: center;
   position: relative;
   top: -28px;
-  /* or ?% */
   color: #9356dc;
   transform-origin: bottom;
   opacity: 0;
