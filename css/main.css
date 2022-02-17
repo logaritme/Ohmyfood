@@ -573,7 +573,7 @@ body {
     justify-content: center;
     color: black;
     font-size: 3rem;
-    z-index: 5; }
+    z-index: 10; }
   .icones__heart .icone__h--full {
     width: 50px;
     display: flex;
@@ -581,7 +581,7 @@ body {
     justify-content: center;
     font-size: 2.6rem;
     position: relative;
-    top: 27px;
+    top: 28px;
     right: 15px;
     color: transparent;
     -webkit-background-clip: text;
