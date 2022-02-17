@@ -412,16 +412,16 @@ nav {
   border-radius: 0 18px 18px 0; }
 
 .appear--first {
-  animation: apparition 1200ms linear 300ms; }
+  animation: apparition 1000ms linear 280ms both; }
 
 .appear--second {
-  animation: apparition 1200ms linear 600ms; }
+  animation: apparition 1000ms linear 560ms both; }
 
 .appear--third {
-  animation: apparition 1200ms linear 900ms; }
+  animation: apparition 1000ms linear 840ms both; }
 
 .appear--forth {
-  animation: apparition 1200ms linear 1200ms; }
+  animation: apparition 1000ms linear 1120ms both; }
 
 @keyframes apparition {
   0% {
@@ -488,6 +488,7 @@ nav {
 .btn__first {
   width: 50%;
   min-width: 150px;
+  max-width: 300px;
   height: 65px;
   display: flex;
   align-content: center;

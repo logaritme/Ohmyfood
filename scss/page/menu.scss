@@ -214,20 +214,19 @@ nav {
 // CARDS APPARITION
 
 .appear--first {
-  animation: apparition 1200ms linear 300ms;
+  animation: apparition 1000ms linear 280ms both;
 }
 
 .appear--second {
-  animation: apparition 1200ms linear 600ms;
+  animation: apparition 1000ms linear 560ms both;
 }
 
 .appear--third {
-  animation: apparition 1200ms linear 900ms;
+  animation: apparition 1000ms linear 840ms both;
 }
 
 .appear--forth {
-  animation: apparition 1200ms linear 1200ms;
-  // backwards?
+  animation: apparition 1000ms linear 1120ms both;
 }
 
 @keyframes apparition {
@@ -322,6 +321,7 @@ nav {
 .btn__first {
   width: 50%;
   min-width: $padding-bigger *3;
+  max-width: $padding-bigger *6;
   height: 65px;
   display: flex;
   align-content: center;
