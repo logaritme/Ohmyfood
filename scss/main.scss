@@ -206,10 +206,17 @@ body {
 
 // 2.2 | HEADING: LOGO
 
-.logo__big {
-  width: 41%;
-  border-radius: 0;
+.text-transf--top {
+  // padding: $padding-gap-normal 0;
+  font-family: $font-family-secondary;
+  font-size: $font-size-xl;
+  color: $color-black;
 }
+
+// .logo__big {
+//   width: 41%;
+//   border-radius: 0;
+// }
 
 // 2.3 | HEADING : SEARCH
 
@@ -368,7 +375,7 @@ body {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    margin: $padding-small $padding-small $padding-big $padding-small;
+    margin: $padding-small $padding-small ( $padding-higher *2 + $padding-small) $padding-small;
     }
 
 // MAIN
@@ -381,6 +388,7 @@ body {
   &__bold {
     font-size: $font-size-inter-sec-ter;
     font-weight: $icone-weight;
+    padding-bottom: 8px;
   }
   &__thin {
     font-size: $font-size-inter-sec-ter;
@@ -391,6 +399,8 @@ body {
 .icone__position__h {
   width: 15%;
   display: block;
+  position: relative;
+  left: 7%;
 }
 
 // HEARTS AND HEART ON CLICK (FILL)
@@ -679,6 +689,7 @@ figure {
 .flex__header {
   display: flex;
   flex-flow: column nowrap;
+
 }
 
 // FLEX REUSABLE
@@ -818,7 +829,7 @@ main {
 // MAIN : TITLE
 
 .container__title {
-  padding: $padding-higher 0;
+  padding: ($padding-higher *2) 0 $padding-higher 0;
   color: $color-black;
   font-size: 2.6rem;
   font-weight: 900;
@@ -1050,6 +1061,7 @@ ul {
   }
 
   .container__title {
+    padding-top: $padding-higher;
     align-self: center;
   }
 

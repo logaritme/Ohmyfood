@@ -400,9 +400,10 @@ body {
   100% {
     opacity: 0;
     transform: scale(0, 0); } }
-.logo__big {
-  width: 41%;
-  border-radius: 0; }
+.text-transf--top {
+  font-family: "Shrikhand", serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
+  font-size: 3.2rem;
+  color: black; }
 
 #location {
   width: 177px;
@@ -536,21 +537,24 @@ body {
   border-radius: 20px;
   display: flex;
   align-items: center;
-  margin: 10px 10px 40px 10px; }
+  margin: 10px 10px 70px 10px; }
 
 .text__position {
   width: 75%;
   display: block; }
   .text__position__bold {
     font-size: 2rem;
-    font-weight: 900; }
+    font-weight: 900;
+    padding-bottom: 8px; }
   .text__position__thin {
     font-size: 2rem;
     font-weight: 300; }
 
 .icone__position__h {
   width: 15%;
-  display: block; }
+  display: block;
+  position: relative;
+  left: 7%; }
 
 .icones__heart {
   width: 2rem;
@@ -873,7 +877,7 @@ main {
   padding: 0 5% 60px 5%; }
 
 .container__title {
-  padding: 30px 0;
+  padding: 60px 0 30px 0;
   color: black;
   font-size: 2.6rem;
   font-weight: 900; }
@@ -1026,6 +1030,7 @@ footer {
     padding: 35px 25px 0 25px; }
 
   .container__title {
+    padding-top: 30px;
     align-self: center; }
 
   .container__big__block {

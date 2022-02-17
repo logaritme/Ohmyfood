@@ -21,7 +21,7 @@ body {
   flex-flow: column nowrap;
 }
 
-.container__palette {
+.container__menu {
   width: 100%;
   height: auto;
   background-color: $lightest-grey;
@@ -29,12 +29,11 @@ body {
   flex-flow: column nowrap;
 }
 
-.palette {
+.menu {
   position:relative;
   top: -53px;
   border-radius: $padding-bigger;
   background-color: $lightest-grey;
-  // z-index: 10;
 }
 
 nav {
@@ -61,8 +60,8 @@ nav {
 // 1.? LOGO LAYOUT
 
 .header {
-  height: 75px;
-  padding: 25px 0 $padding-small 0;
+  height: 65px;
+  padding-top: $padding-higher;
 }
 
 // 1.2 TITLE LAYOUT
@@ -129,6 +128,7 @@ nav {
   width: $padding-bigger;
   height: $padding-bigger;
   position: relative;
+  top: $padding-small *(-0.5);
   left: $padding-small;
   @include flex-jc-center;
   font-weight: $icone-weight;
@@ -142,7 +142,7 @@ nav {
   position: relative;
   top: -60px;
   width: auto;
-  height: $padding-bigger + $padding-gap-normal;
+  // height: $padding-bigger + $padding-gap-normal;
   @include flex-jc-center;
 }
 
@@ -227,6 +227,7 @@ nav {
 
 .appear--forth {
   animation: apparition 1200ms linear 1200ms;
+  // backwards?
 }
 
 @keyframes apparition {
