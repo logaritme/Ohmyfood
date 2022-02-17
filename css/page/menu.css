@@ -436,7 +436,7 @@ nav {
   flex-flow: column nowrap;
   justify-content: center;
   padding-left: 3%;
-  gap: 10px;
+  gap: 9px;
   overflow: hidden; }
 
 .price__anim {
