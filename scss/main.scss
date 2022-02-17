@@ -421,7 +421,7 @@ body {
     @include flex-as-jc-center;
     color: $color-black;
     font-size: 3rem;
-    z-index: 5;
+    z-index: 10;
   }
   .icone__h--full {
     width: 50px;
