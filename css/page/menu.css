@@ -482,11 +482,11 @@ nav {
   transition: all 500ms ease-in-out; }
 
 /* MAKES COME THE GREEN BAND */
-.container__btn:hover > .btn__food > .container__band__anim {
+.container__btn:active > .btn__food > .container__band__anim {
   margin-right: 0; }
 
 /*  MAKES ROTATE 360° THE V-CHECKER */
-.container__btn:hover > .btn__food > .container__band__anim > .band__anim__check {
+.container__btn:active > .btn__food > .container__band__anim > .band__anim__check {
   transform: rotate(1turn); }
 
 .btn__first {
@@ -505,7 +505,7 @@ nav {
   box-shadow: 0px 6px 10px #dddddd;
   background: linear-gradient(175deg, #ff79da, #9356dc), linear-gradient(-5deg, #ff79da, #9356dc);
   cursor: pointer; }
-  .btn__first:hover {
+  .btn__first:active {
     opacity: 0.85;
     box-shadow: 0px 6px 10px #aaaaaa; }
 
@@ -630,6 +630,7 @@ footer > nav > ul {
   .icones__heart {
     margin: 0 20px; }
 
+  /* HOVER HEART (FILL) */
   .icones__heart:hover > .fas.fa-heart {
     opacity: 1;
     transform: scale(1); }
@@ -647,6 +648,19 @@ footer > nav > ul {
 
   .container__btn {
     width: 65%; }
+
+  .btn__first:hover {
+    opacity: 0.85;
+    box-shadow: 0px 6px 10px #aaaaaa; }
+
+  /* TOUCH CARDS */
+  /* MAKES COME THE GREEN BAND */
+  .container__btn:hover > .btn__food > .container__band__anim {
+    margin-right: 0; }
+
+  /*  MAKES ROTATE 360° THE V-CHECKER */
+  .container__btn:hover > .btn__food > .container__band__anim > .band__anim__check {
+    transform: rotate(1turn); }
 
   /* CONTAINER FOR ALL THE FOOTER */
   footer {

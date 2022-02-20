@@ -292,17 +292,17 @@ nav {
   transition: all 500ms ease-in-out;
 }
 
-// 3.2 HOVER CARDS
+// 3.2 TOUCH CARDS
 
 /* MAKES COME THE GREEN BAND */
 
-.container__btn:hover > .btn__food > .container__band__anim {
+.container__btn:active > .btn__food > .container__band__anim {
   margin-right: 0;
 }
 
 /*  MAKES ROTATE 360° THE V-CHECKER */
 
-.container__btn:hover > .btn__food > .container__band__anim > .band__anim__check {
+.container__btn:active > .btn__food > .container__band__anim > .band__anim__check {
   transform: rotate(1turn);
 }
 
@@ -325,7 +325,7 @@ nav {
   background: linear-gradient(175deg, $color-secondary, $color-primary ),
               linear-gradient(-5deg, $color-secondary, $color-primary);
   cursor: pointer;
-  &:hover {
+  &:active {
     opacity: 0.85;
     box-shadow: 0px 6px $padding-small $darkest-grey;
   }
@@ -515,7 +515,7 @@ footer > nav > ul {
   margin: 0 $padding-gap-normal;
 }
 
-// HOVER HEART (FILL)
+/* HOVER HEART (FILL) */
 
 .icones__heart:hover > .fas.fa-heart {
   opacity: 1;
@@ -537,6 +537,25 @@ nav > section > h2 {
 
 .container__btn {
   width: 65%;
+}
+
+.btn__first:hover {
+  opacity: 0.85;
+  box-shadow: 0px 6px $padding-small $darkest-grey;
+}
+
+/* TOUCH CARDS */
+
+/* MAKES COME THE GREEN BAND */
+
+.container__btn:hover > .btn__food > .container__band__anim {
+  margin-right: 0;
+}
+
+/*  MAKES ROTATE 360° THE V-CHECKER */
+
+.container__btn:hover > .btn__food > .container__band__anim > .band__anim__check {
+  transform: rotate(1turn);
 }
 
 // FOOTER DESKTOP
