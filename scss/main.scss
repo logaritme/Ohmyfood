@@ -167,8 +167,7 @@ body {
 
 .body--cover {
   display: flex;
-  width: 100%;
-  height: 100%;
+  @include width-height-full;
   position: fixed;
   top: 0;
   left: 0;
@@ -213,10 +212,6 @@ body {
   color: $color-black;
 }
 
-// .logo__big {
-//   width: 41%;
-//   border-radius: 0;
-// }
 
 // 2.3 | HEADING : SEARCH
 
@@ -232,12 +227,10 @@ body {
 
 // TEXT BEFORE BUTTON
 
-.book__text--first {
+.book__text {
+  &--first {
   width: 70%;
   height: auto;
-  display: flex;
-  align-self: center;
-  justify-self: center;
   text-align: center;
   margin: 0 auto;
   color: $color-black;
@@ -245,19 +238,16 @@ body {
   font-size: $font-size-x;
   font-weight: $icone-weight;
   }
-
-.book__text--second {
+  &--second {
   width: 80%;
   height: auto;
-  display: flex;
-  align-self: center;
-  justify-self: center;
   text-align: center;
   margin: 0 auto;
   color: $color-black;
   padding-bottom: $padding-higher;
   font-size: 2.1rem;
   font-weight: $weight-thiner;
+  }
 }
 
 // BUTTON
@@ -266,9 +256,7 @@ body {
   width: 60%;
   min-width: 250px;
   height: 65px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  @include flex-ac-jc-center;
   padding: $padding-gap-normal 0 $padding-gap-normal 0;
   border: none;
   border-radius: 38px;
@@ -293,61 +281,56 @@ body {
   color: $color-white;
   padding: 0 3%;
   font-size: 2.1rem;
-  font-weight: 400;
+  font-weight: $weight-thin;
 }
   // 2.5 | HEADING : FUNCTIONING
     
 .heading__second {
   width: 100%;
   padding-left: 7%;
-  padding-right: 5%;
+  padding-right: $marg-paddg-perct-stdrt;
 }
 
 .heading__second__title {
   padding: $padding-big 0 $padding-gap-normal 0;
-  text-indent: -10px;
+  text-indent: $padding-small *(-1);
   color: $color-black;
   font-size: $font-size-x;
   font-weight: $icone-weight;
 }
 
 .heading__second__functioning {
-      width: 100%;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-    }
-
-.functioning__btn {
-    width: 100%;
-    height: 80px;
-    background-color: #eeeeee;
-    border: none;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    margin: $padding-small;
+  width: 100%;
+  @include flex-ai-center;
+  flex-flow: column nowrap;
   }
 
+.functioning__btn {
+  width: 100%;
+  height: 80px;
+  background-color: $lightest-grey;
+  border: none;
+  border-radius: $padding-gap-normal;
+  @include flex-ai-center;
+  margin: $padding-small;
+}
+
 .point {
-    color: $color-white;
-    background-color: transparent;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    line-height: 1.6;
-    position: relative;
-    left: -36px;
-    font-size: $font-size-tertiary;
-    }
+  color: $color-white;
+  background-color: transparent;
+  @include flex-ac-jc-center;
+  line-height: 1.6;
+  position: relative;
+  left: -36px;
+  font-size: $font-size-tertiary;
+  }
 
 .functioning__btn__txt {
   width: 100%;
   height: 60px;
   border: none;
-  border-radius: 17px;
-  display: flex;
-  align-items: center;
+  border-radius: $bord-rad-stdrt;
+  @include flex-ai-center;
   color: $color-black;
   background-color: $lightest-grey;
   margin: $padding-small;
@@ -358,9 +341,8 @@ body {
   width: 100%;
   height: 60px;
   border: none;
-  border-radius: 17px;
-  display: flex;
-  align-items: center;
+  border-radius: $bord-rad-stdrt;
+  @include flex-ai-center;
   color: $color-black;
   background-color: transparent;
   margin: $padding-small;
@@ -368,15 +350,14 @@ body {
 }
 
 .functioning__btn--lighten {
-    width: 100%;
-    height: 80px;
-    background-color: rgba(147,86,220, .1);
-    border: none;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    margin: $padding-small $padding-small ( $padding-higher *2 + $padding-small) $padding-small;
-    }
+  width: 100%;
+  height: 80px;
+  background-color: rgba(147,86,220, .1);
+  border: none;
+  border-radius: $padding-gap-normal;
+  @include flex-ai-center;
+  margin: $padding-small $padding-small ( $padding-higher *2 + $padding-small) $padding-small;
+  }
 
 // MAIN
 // FIGCAPTIONS
@@ -411,7 +392,7 @@ body {
   position: relative;
   top: -25px;
   left: 0;
-  margin: 0 5%;
+  margin: 0 $marg-paddg-perct-stdrt;
   cursor: pointer;
   &:active > .fas.fa-heart {
     opacity: 1;
@@ -424,7 +405,7 @@ body {
     z-index: 10;
   }
   .icone__h--full {
-    width: 50px;
+    width: $padding-bigger;
     @include flex-as-jc-center;
     font-size: 2.6rem;
     position: relative;
@@ -459,7 +440,7 @@ body {
   font-family: $font-family-secondary;
   font-size: $font-size-tertiary;
   color: $color-white;
-  padding: 20px 0;
+  padding: $padding-gap-normal 0;
 }
 
 ul {
@@ -508,8 +489,8 @@ ul {
 }
 
 .card__sticker__img {
-  height: 200px;
-  border-radius: 17px 17px 0px 0px;
+  height: $padding-bigger *4;
+  border-radius: $bord-rad-stdrt $bord-rad-stdrt 0px 0px;
   overflow: hidden;
 }
 
@@ -519,7 +500,7 @@ ul {
 
 figure {
   object-fit: cover;
-  border-radius: 17px;
+  border-radius: $bord-rad-stdrt;
   background-color: $color-white;
   width: 100%;
   box-shadow: 0 5px 9px $mid-grey;
@@ -531,15 +512,14 @@ figure {
 
 .card__free__img {
   height: 200px;
-  border-radius: 17px 17px 0px 0px;
+  border-radius: $bord-rad-stdrt $bord-rad-stdrt 0px 0px;
   overflow: hidden;
 }
 
 // IMAGE ITSELF
 
 .img__index {
-  width: 100%;
-  height: 100%;
+  @include width-height-full;
   object-fit: cover;
 }
 
@@ -618,7 +598,7 @@ figure {
       justify-content: center;
       font-size: $font-size-tertiary;
       font-weight: $icone-weight;
-      font-size: 20px;
+      font-size: $padding-gap-normal;
       line-height: 1.3;
     }
     
@@ -637,7 +617,7 @@ figure {
     
     .fas.fa-utensils {
       width: $icone-width-small;
-      height: 20px;
+      height: $padding-gap-normal;
       display: flex;
       align-self: center;
       justify-content: center;
@@ -649,7 +629,7 @@ figure {
 
     .fas.fa-hands-helping {
       width: $icone-width-small;
-      height: 20px;
+      height: $padding-gap-normal;
       display: flex;
       align-self: center;
       justify-content: center;
@@ -725,8 +705,7 @@ figure {
 // 2.1 | HEADING  : LOADER
 
 .loading--animation {
-  width: 100%;
-  height: 100%;
+  @include width-height-full;
   margin: 0;
   padding: 0;
   font-size: 4rem;
@@ -735,8 +714,7 @@ figure {
 }
 
 .load--anim--first {
-  width: 100%;
-  height: 100%;
+  @include width-height-full;
   display: flex;
   justify-content: center;
   background-color: $color-primary;
@@ -792,7 +770,7 @@ figure {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      margin: 20px 0;
+      margin: $padding-gap-normal 0;
       }
 
 // 2.3 | HEADING : SEARCH
@@ -804,7 +782,7 @@ figure {
 }
 
 form {
-  padding: 20px 0 20px 0;
+  padding: $padding-gap-normal 0 $padding-gap-normal 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -831,7 +809,7 @@ main {
 
 .container {
   height: auto;
-  padding: 0 5% 60px 5%;
+  padding: 0 $marg-paddg-perct-stdrt 60px $marg-paddg-perct-stdrt;
 }
 
 // MAIN : TITLE
@@ -883,7 +861,7 @@ figcaption {
 
 .layout {
   background-color: $color-white;
-  border-radius: 17px;
+  border-radius: $bord-rad-stdrt;
   padding: 5.5% 0 5.5% 4%;
 }
 
@@ -891,7 +869,7 @@ figcaption {
 
 footer {
   height: auto;
-  padding-left: 5%;
+  padding-left: $marg-paddg-perct-stdrt;
   background: $color-dark;
 }
 
@@ -899,18 +877,6 @@ footer {
 
 @media screen and (min-width: 768px) {
 //  768px to 992px
-
-  // IMG LOGO OF FOOTER
-
-  // Element replaced
-// .logo__little {
-//   width: 28%;
-//   border-radius: 0;
-//   padding: $padding-higher 0;
-//   color: $color-white;
-//   -webkit-filter: invert(100%);
-//   filter: invert(100%);
-// }
 
 // HEADER TABLET
 
@@ -941,7 +907,7 @@ footer {
 // MAIN TABLET
 
 .card__sticker__img {
-  height: 300px;
+  height: $padding-bigger *6;
 }
 
 .card__sticker__over {
@@ -951,7 +917,7 @@ footer {
 }
 
 .card__free__img {
-  height: 300px;
+  height: $padding-bigger *6;
 }
 
 figcaption {
@@ -963,7 +929,7 @@ figcaption {
 }
 
 .text__position__bold {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .text__position__thin {
@@ -992,12 +958,12 @@ ul {
 
 .fas.fa-utensils {
   font-size: 2rem;
-  padding-right: 20px;
+  padding-right: $padding-gap-normal;
 }
 
 .fas.fa-hands-helping {
   font-size: 2rem;
-  padding-right: 20px;
+  padding-right: $padding-gap-normal;
 }
 
 .text--length {
@@ -1042,7 +1008,7 @@ ul {
   }
 
   .heading__second__title {
-    padding: 38px 0 20px 0;
+    padding: 38px 0 $padding-gap-normal 0;
   }
 
   .functioning__btn {

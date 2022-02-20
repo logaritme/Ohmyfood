@@ -415,22 +415,15 @@ body {
 .book__text--first {
   width: 70%;
   height: auto;
-  display: flex;
-  align-self: center;
-  justify-self: center;
   text-align: center;
   margin: 0 auto;
   color: black;
   padding-bottom: 20px;
   font-size: 2.8rem;
   font-weight: 900; }
-
 .book__text--second {
   width: 80%;
   height: auto;
-  display: flex;
-  align-self: center;
-  justify-self: center;
   text-align: center;
   margin: 0 auto;
   color: black;
@@ -481,8 +474,8 @@ body {
 .heading__second__functioning {
   width: 100%;
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center; }
+  align-items: center;
+  flex-flow: column nowrap; }
 
 .functioning__btn {
   width: 100%;
