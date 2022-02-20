@@ -1,8 +1,14 @@
-@forward 'color';
-@forward 'reset';
-@forward 'size';
-@forward 'typography';
-@forward 'mixin';
+/* ICON SIZES */
+/* PADDINGS AND OTHER SIZES */
+/* SETTING HEIGHT CARDS */
+/* GENERAL MARGIN/PADDING FROM THE EDGES */
+/* GENERAL BORDER-RADIUS */
+/* FONT FAMILIES */
+/* FONT SIZES */
+/* FONT WEIGHTS */
+/* FONT FAMILIES */
+/* FONT SIZES */
+/* FONT WEIGHTS */
 body {
   width: 100%;
   max-width: 1440px;
@@ -123,6 +129,17 @@ ul {
   gap: 0;
   list-style-type: none; }
 
+/* ICON SIZES */
+/* PADDINGS AND OTHER SIZES */
+/* SETTING HEIGHT CARDS */
+/* GENERAL MARGIN/PADDING FROM THE EDGES */
+/* GENERAL BORDER-RADIUS */
+/* FONT FAMILIES */
+/* FONT SIZES */
+/* FONT WEIGHTS */
+/* FONT FAMILIES */
+/* FONT SIZES */
+/* FONT WEIGHTS */
 body {
   width: 100%;
   max-width: 1440px;
@@ -255,117 +272,7 @@ body {
   line-height: 1; }
 
 * {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  font-size: 100%; }
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-* {
   font-family: "Roboto", Arial, "Arial Black", "Courier New", Helvetica, sans-serif; }
-
-a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer; }
-
-article {
-  display: flex;
-  align-items: flex-end;
-  background-color: white; }
-
-article,
-details,
-hgroup,
-menu {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  display: block;
-  flex-direction: column; }
-
-b {
-  font-weight: bold; }
-
-blockquote,
-q {
-  margin: 0;
-  padding: 0;
-  quotes: none; }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  margin: 0;
-  padding: 0;
-  content: "";
-  content: none;
-  content: ""; }
-
-button {
-  margin: 0;
-  padding: 0; }
-
-div,
-section,
-header {
-  text-decoration: none; }
-
-form,
-input {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  text-decoration: none; }
-
-header {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  background-color: white; }
-
-li {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style-type: none; }
-
-ol {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  grid-gap: 0;
-  gap: 0;
-  list-style-type: none; }
-
-p {
-  margin: 0;
-  padding: 0; }
-
-p::first-letter {
-  font-style: unset; }
-
-section {
-  height: auto;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column; }
-
-ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  grid-gap: 0;
-  gap: 0;
-  list-style-type: none; }
 
 body {
   font-family: "Roboto", sans-serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;

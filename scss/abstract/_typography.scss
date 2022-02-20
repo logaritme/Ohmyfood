@@ -1,11 +1,14 @@
 
 
 
-// FONTS
+// FONTS \\
+
+/* FONT FAMILIES */
 
 $font-family-primary: "Roboto", sans-serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
-// Titre des restaurants en Shrikhand=>
 $font-family-secondary: "Shrikhand", serif, Arial, "Arial Black", "Courier New", Helvetica, sans-serif;
+
+/* FONT SIZES */
 
 $font-size-xl: 3.2rem;
 $font-size-x: 2.8rem;
@@ -15,6 +18,8 @@ $font-size-secondary: 2.2rem;
 $font-size-inter-sec-ter: 2rem;
 $font-size-tertiary: 1.8rem;
 $font-size-quaternary: 1.6rem;
+
+/* FONT WEIGHTS */
 
 $icone-weight: 900;
 $weight-bold: 700;
