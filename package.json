@@ -1,7 +1,7 @@
 {
   "scripts": {
     "watch": "sass --watch scss/menu.scss:css/menu.css",
-    "prefix": "postcss ./css/page/menu.css --use autoprefixer -d ./css/prefixed/"
+    "prefix": "postcss ./css/page/menu.css ./css/main.css --use autoprefixer -d ./css/prefixed/"
   },
   "dependencies": {
     "sass": "^1.48.0"
